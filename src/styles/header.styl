@@ -1,0 +1,93 @@
+header {
+    height 110px
+    background cBackHead
+
+    div.grid_6 {
+        height 110px
+    }
+
+    h1 {
+        margin 0
+        padding-top 11px
+
+        a {
+            text-decoration none
+        }
+
+        span {
+            font-family 'Ubuntu',sans-serif
+            display block
+            line-height 50px
+            font-size 50px
+            color white
+
+            &.firstname {
+                font-weight 400
+                text-transform lowercase
+                float left
+                padding-bottom 35px
+            }
+
+            &.lastname {
+                color cMainText
+                font-weight 700
+                text-transform lowercase
+            }
+
+            &.tagline {
+                font-weight 300
+                font-size 34px
+                line-height 34px
+                text-transform uppercase
+            }
+        }
+    }
+
+    ul {
+        list-style-type none
+        display block
+        margin 0
+        padding 0
+        height 30px
+        position absolute
+        right 10px
+        bottom 10px
+
+        li {
+            display block
+            margin 0
+            padding 0
+            width 40px
+            height 30px
+            background cMainText
+            float left
+            text-align center
+
+            a {
+                text-decoration none
+                color cBackMain
+                line-height 30px
+
+                &:hover {
+                    font-weight bold
+                }
+            }
+
+            &.first {
+                border-radius left 5px
+            }
+
+            &.last {
+                border-radius right 5px
+            }
+
+            &.active {
+                background lighten(cMainText, 10%)
+
+                a {
+                    font-weight bold
+                }
+            }
+        }
+    }
+}

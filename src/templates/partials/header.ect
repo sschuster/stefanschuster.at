@@ -1,0 +1,23 @@
+<header>    
+    <div class="container_12">
+        <div class="grid_6">
+            <h1>
+                <a href="/<%= @langActive %>">
+                    <span class="firstname">Stefan</span>
+                    <span class="lastname">Schuster</span>
+                    <span class="tagline">Consulting</span>
+                </a>
+            </h1>
+        </div>
+        <div class="grid_6">
+            <ul class="language">
+                <li class="first <%= if @langActive == "de" then "active" else "" %>">
+                    <a href="/de<%= @langPath %>">DE</a>
+                </li>
+                <li class="last <%= if @langActive == "en" then "active" else "" %>">
+                    <a href="/en<%= @langPath %>">EN</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
