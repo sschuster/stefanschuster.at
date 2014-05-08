@@ -3,5 +3,13 @@
         <div class="grid_12">
             &copy; 2014 Stefan Schuster
         </div>
+        <div class="grid_12">
+            <% if @langActive == "en": %>
+                <a href="/en/imprint">Imprint</a>
+            <% else: %>
+                <a href="/de/imprint">Impressum</a>
+            <% end %>
+        </div>
+        <div class="clear"></div>
     </div>    
 </footer>

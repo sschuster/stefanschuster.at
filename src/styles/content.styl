@@ -1,0 +1,114 @@
+.content {
+    div.intro {
+        padding-bottom 50px
+
+        p {
+            font-size 30px
+
+            strong {
+                font-weight normal
+                color cHighlight
+            }
+        }
+    }
+
+    div.portrait {
+        text-align center
+    }
+
+    div.references {
+        margin-top 50px
+    }
+
+    div.resume_left {
+        text-align right
+        margin-bottom 20px
+    }
+
+    div.resume_right {
+        margin-bottom 20px
+    }
+
+    a {
+        color cHighlight
+
+        &:hover {
+            color darken(cHighlight, 40%)
+        }
+    }
+
+    div.reference {
+        height 100px
+
+        a {
+            opacity: 0.5
+            display block
+            text-align center
+
+            &.mind42 {
+                padding-top ((100px - 59px) / 2)
+            }
+
+            &.spaaze {
+                padding-top ((100px - 61px) / 2)
+            }
+
+            &.irian {
+                padding-top ((100px - 89px) / 2)
+            }
+
+            &:hover {
+                opacity: 1
+            }
+        }
+    }
+
+    a.button {
+        background-color cHighlight
+        color white
+        text-decoration none
+        font-size 24px
+        line-height 40px
+        border-radius 20px
+        padding 6px 20px
+
+        &:hover {
+            background-color lighten(cHighlight, 30%)
+        }
+    }
+
+    h1 {
+        color cMainText
+        font-size 30px
+        font-weight bold
+        margin 10px 0 10px
+    }
+
+    h2 {
+        font-weight normal
+        font-size 26px
+        color cHighlight
+        margin 10px 0 10px
+        padding 0
+    }
+
+    p {
+        margin 0 0 20px
+        font-size 16px
+
+        &.subheader {
+            font-size 20px
+        }
+
+        strong {
+            font-weight normal
+            color cHighlight
+        }
+    }
+    
+    ul {
+        margin 0 0 20px
+        padding-left 30px
+        font-size 16px
+    }
+}
