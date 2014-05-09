@@ -1,4 +1,5 @@
 <% extend "layout" %>
+<% @METADESCRIPTION = "My name is Stefan Schuster and I'm a freelancer based in Vienna, Austria in the field of HTML5, CSS, JavaScript and mobile apps" %>
 
 <div class="grid_4">
     <img src="/img/consulting_html5.png" alt="HTML5, CSS3 and JavaScript consulting" title="HTML5, CSS3 and JavaScript consulting">
@@ -11,8 +12,13 @@
 </div>
 <div class="grid_12 intro">
     <p>
-        Hi, my name is Stefan Schuster and I'm a freelancer based in Vienna, Austria.<br>
-        I'm an expert in the field of <strong>HTML5</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>mobile apps</strong>. I offer services and consulting in the area of <strong>web application development</strong> and creating <strong>mobile apps</strong>.
+        Hi, my name is Stefan Schuster and I'm a freelancer based in Vienna, Austria.
+    </p>
+    <p>
+        I'm an expert in the field of <strong>HTML5</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>mobile</strong>.
+    </p>
+    <p>
+        I offer services and consulting in the area of <strong>web application development</strong> and creating <strong>mobile apps</strong>.
     </p>
     <p>
         <a class="button" href="/<%= @langActive %>/services">Services</a>
@@ -39,6 +45,7 @@
     </p>
 </div>
 <div class="grid_10 prefix_2">
+    <a class="button" href="/<%= @langActive %>/competencies">Competencies</a>
     <a class="button" href="/<%= @langActive %>/about">About me</a>
 </div>
 <div class="grid_12 references">

@@ -7,6 +7,7 @@ exports.init = (app) ->
     app.get(/^\/(en|de)$/, langMiddleware, index)
     app.get(/^\/(en|de)\/about$/, langMiddleware, about)
     app.get(/^\/(en|de)\/services$/, langMiddleware, services)
+    app.get(/^\/(en|de)\/competencies$/, langMiddleware, competencies)
     app.get(/^\/(en|de)\/imprint$/, langMiddleware, imprint)
 
 langMiddleware = (req, res, next) ->
@@ -38,6 +39,9 @@ about = (req, res, next) ->
 
 services = (req, res, next) ->
     render(req, res, "services")
+
+competencies = (req, res, next) ->
+    render(req, res, "competencies")
 
 imprint = (req, res, next) ->
     render(req, res, "imprint")

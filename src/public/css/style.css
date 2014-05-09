@@ -15,6 +15,11 @@ header ul li.first{-webkit-border-top-left-radius:5px;border-top-left-radius:5px
 header ul li.last{-webkit-border-top-right-radius:5px;border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;border-bottom-right-radius:5px;}
 header ul li.active{background:#413d3d;}
 header ul li.active a{font-weight:bold}
+nav{background:#2b2828;margin-bottom:20px;height:35px;}
+nav ul{margin:0;padding:0;}
+nav ul li{display:block;float:left;height:20px;margin-right:20px;}
+nav ul li a{font-size:16px;line-height:35px;color:#fffff4;text-decoration:none;}
+nav ul li a.active{color:#e5283a}
 .content div.intro{padding-bottom:50px;}
 .content div.intro p{font-size:30px;}
 .content div.intro p strong{font-weight:normal;color:#e5283a}

@@ -1,0 +1,26 @@
+<nav>
+    <div class="container_12">
+        <ul>
+            <li>
+                <a href="/<%= @langActive %>" class="<%= if @langPath == "" then "active" else "" %>">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/<%= @langActive %>/services" class="<%= if @langPath == "/services" then "active" else "" %>">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="/<%= @langActive %>/competencies" class="<%= if @langPath == "/competencies" then "active" else "" %>">
+                    <%= if @langActive == "en" then "Competencies" else "Kompetenzen" %>
+                </a>
+            </li>
+            <li>
+                <a href="/<%= @langActive %>/about" class="<%= if @langPath == "/about" then "active" else "" %>">
+                    <%= if @langActive == "en" then "About" else "Über" %>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
