@@ -8,7 +8,7 @@
             </li>
             <li>
                 <a href="/<%= @langActive %>/services" class="<%= if @langPath == "/services" then "active" else "" %>">
-                    Services
+                    <%= if @langActive == "en" then "Services" else "Dienstleistungen" %>
                 </a>
             </li>
             <li>

@@ -23,7 +23,7 @@ nav ul li a.active{color:#e5283a}
 .content div.intro{padding-bottom:50px;}
 .content div.intro p{font-size:30px;}
 .content div.intro p strong{font-weight:normal;color:#e5283a}
-.content div.portrait{text-align:center}
+.content div.portrait{text-align:center;margin-top:15px}
 .content div.references{margin-top:50px}
 .content div.resume_left{text-align:right;margin-bottom:20px}
 .content div.resume_right{margin-bottom:20px}
