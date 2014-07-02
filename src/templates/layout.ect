@@ -20,11 +20,22 @@
         <% if @METADESCRIPTION: %>
             <meta name="description" content="<%= @METADESCRIPTION %>">
         <% end %>
+
+        <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">-->
+        <meta id="viewport" name="viewport" content="width=980">
+        <meta name="format-detection" content="telephone=no">
+
+        <script>
+            if (window.outerWidth <= 568) {
+                var viewport = document.getElementById("viewport");
+                viewport.setAttribute("content", "width=device-width,initial-scale=1.0,user-scalable=no");
+            }
+        </script>
     </head>
     <body>
         <% include "partials/header" %>
         <% include "partials/menu" %>
-        <div class="content container_12">
+        <div class="content container_12 <%= if @CONTENTCLASS then @CONTENTCLASS else "" %>">
             <% content %>
         </div>        
         <% include "partials/footer" %>

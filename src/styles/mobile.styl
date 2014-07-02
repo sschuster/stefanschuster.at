@@ -1,0 +1,192 @@
+@media (max-width: 568px) {
+
+    body {
+      min-width: initial;
+    }
+
+    .container_12 {
+        width auto
+
+        .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+            display block
+            width auto
+            float none
+            margin 0
+        }
+
+        .prefix_1, .prefix_2, .prefix_3, .prefix_4, .prefix_5, .prefix_6, .prefix_7, .prefix_8, .prefix_9, .prefix_10, .prefix_11, 
+        .suffix_1, .suffix_2, .suffix_3, .suffix_4, .suffix_5, .suffix_6, .suffix_7, .suffix_8, .suffix_9, .suffix_10, .suffix_11 {
+            padding 0
+        }
+    }
+
+    header {
+        div.grid_6.logo {
+            height 80px
+            padding 0 10px
+
+            h1 {
+                padding-top 5px
+
+                span {
+                    font-size 40px
+                    line-height 40px
+
+                    &.firstname {
+                        padding-bottom 28px
+                    }
+
+                    &.tagline {
+                        font-size 28px;
+                        line-height 28px;
+                    }
+                }
+            }
+        }
+
+        div.grid_6.language {
+            height auto
+            background cMainText
+
+            ul {
+                position static
+
+                li {
+                    width 50%
+
+                    &.first {
+                        border-radius 0
+                    }
+
+                    &.last {
+                        border-radius 0
+                    }
+                }
+            }
+        }
+    }
+
+    nav {
+        margin-bottom 10px
+        height auto
+
+        ul li {
+            float none
+            height 30px
+            margin-right 0
+            text-align center
+            border-top 1px solid lighten(cMainText, 10%)
+
+            a {
+                line-height 30px
+            }
+        }
+    }
+
+    div.content {
+        h1 {
+            font-size 26px
+            padding 0 10px
+        }
+
+        h2 {
+            font-size 20px
+            padding 0 10px
+        }
+
+        p {
+            margin 0 10px 10px
+            font-size 16px
+
+            &.subheader {
+                font-size 16px
+            }
+        }
+
+        ul {
+            margin 0 0 10px
+        }
+
+        a.button {
+            font-size 18px
+            line-height 24px
+            display inline-block
+        }
+
+        &.index {
+            .grid_4.img {
+                width 33%
+                float left
+                text-align center
+                img {
+                    width 100px
+                }                
+            }
+
+            .intro {
+                padding 0 0 10px
+
+                p {
+                    font-size 16px
+                }
+            }
+
+            .references {
+                margin-top 20px
+            }
+
+            .reference {
+                height auto
+
+                a {                
+                    padding-top 10px
+
+                    img {
+                        width 150px
+                    }
+                }
+            }
+        }
+
+        &.services {
+            img.mockup {
+                width 100%
+                margin-bottom 10px
+            }
+        }
+
+        &.competencies {
+            .grid_4 img {
+                display none
+            }
+        }
+
+        &.about {
+            img.portrait {
+                display none
+            }
+
+            .resume_left {
+                float left
+                width 30%
+                display inline
+
+                b {
+                    white-space nowrap
+                    overflow hidden
+                    text-overflow ellipsis
+                    display block
+                    margin-bottom -17px
+                }
+            }
+
+            .resume_right {
+                float left
+                width 68%
+                display inline
+                padding-left 2%
+            }
+        }
+    }
+
+}

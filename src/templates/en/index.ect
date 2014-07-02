@@ -1,13 +1,14 @@
 <% extend "layout" %>
+<% @CONTENTCLASS = "index" %>
 <% @METADESCRIPTION = "My name is Stefan Schuster and I'm a freelancer based in Vienna, Austria in the field of HTML5, CSS, JavaScript and mobile apps" %>
 
-<div class="grid_4">
+<div class="grid_4 img">
     <img src="/img/consulting_html5.png" alt="HTML5, CSS3 and JavaScript consulting" title="HTML5, CSS3 and JavaScript consulting">
 </div>
-<div class="grid_4">
+<div class="grid_4 img">
     <img src="/img/consulting_nodejs.png" alt="Node.js consulting" title="Node.js consulting">
 </div>
-<div class="grid_4">
+<div class="grid_4 img">
     <img src="/img/consulting_mobile.png" alt="iOS and Android mobile app consulting" title="iOS and Android mobile app consulting">
 </div>
 <div class="grid_12 intro">
@@ -35,18 +36,18 @@
 </div>
 <div class="grid_4">
     <h2>Contact</h2>
-    <p>
-        <ul>
-            <li><a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a></li>
-            <li><a href="http://at.linkedin.com/in/schusterstefan" target="_blank">LinkedIn</a></li>
-            <li><a href="https://www.xing.com/profile/Stefan_Schuster10" target="_blank">XING</a></li>
-            <li><a href="https://github.com/sschuster" target="_blank">GitHub</a></li>
-        </ul>
-    </p>
+    <ul>
+        <li><a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a></li>
+        <li><a href="http://at.linkedin.com/in/schusterstefan" target="_blank">LinkedIn</a></li>
+        <li><a href="https://www.xing.com/profile/Stefan_Schuster10" target="_blank">XING</a></li>
+        <li><a href="https://github.com/sschuster" target="_blank">GitHub</a></li>
+    </ul>
 </div>
 <div class="grid_9 prefix_3">
-    <a class="button" href="/<%= @langActive %>/competencies">Competencies</a>
-    <a class="button" href="/<%= @langActive %>/about">About me</a>
+    <p>        
+        <a class="button" href="/<%= @langActive %>/competencies">Competencies</a>
+        <a class="button" href="/<%= @langActive %>/about">About me</a>
+    </p>
 </div>
 <div class="grid_12 references">
     <h2>References</h2>

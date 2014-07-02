@@ -46,3 +46,41 @@ nav ul li a.active{color:#e5283a}
 footer{margin:100px 0 20px;}
 footer div.grid_12{text-align:center}
 footer a{color:#e5283a;text-decoration:none}
+@media (max-width: 568px){body{min-width:initial}
+.container_12{width:auto;}
+.container_12 .grid_1,.container_12 .grid_2,.container_12 .grid_3,.container_12 .grid_4,.container_12 .grid_5,.container_12 .grid_6,.container_12 .grid_7,.container_12 .grid_8,.container_12 .grid_9,.container_12 .grid_10,.container_12 .grid_11,.container_12 .grid_12{display:block;width:auto;float:none;margin:0}
+.container_12 .prefix_1,.container_12 .prefix_2,.container_12 .prefix_3,.container_12 .prefix_4,.container_12 .prefix_5,.container_12 .prefix_6,.container_12 .prefix_7,.container_12 .prefix_8,.container_12 .prefix_9,.container_12 .prefix_10,.container_12 .prefix_11,.container_12 .suffix_1,.container_12 .suffix_2,.container_12 .suffix_3,.container_12 .suffix_4,.container_12 .suffix_5,.container_12 .suffix_6,.container_12 .suffix_7,.container_12 .suffix_8,.container_12 .suffix_9,.container_12 .suffix_10,.container_12 .suffix_11{padding:0}
+header div.grid_6.logo{height:80px;padding:0 10px;}
+header div.grid_6.logo h1{padding-top:5px;}
+header div.grid_6.logo h1 span{font-size:40px;line-height:40px;}
+header div.grid_6.logo h1 span.firstname{padding-bottom:28px}
+header div.grid_6.logo h1 span.tagline{font-size:28px;line-height:28px}
+header div.grid_6.language{height:auto;background:#2b2828;}
+header div.grid_6.language ul{position:static;}
+header div.grid_6.language ul li{width:50%;}
+header div.grid_6.language ul li.first{-webkit-border-radius:0;border-radius:0}
+header div.grid_6.language ul li.last{-webkit-border-radius:0;border-radius:0}
+nav{margin-bottom:10px;height:auto;}
+nav ul li{float:none;height:30px;margin-right:0;text-align:center;border-top:1px solid #413d3d;}
+nav ul li a{line-height:30px}
+div.content h1{font-size:26px;padding:0 10px}
+div.content h2{font-size:20px;padding:0 10px}
+div.content p{margin:0 10px 10px;font-size:16px;}
+div.content p.subheader{font-size:16px}
+div.content ul{margin:0 0 10px}
+div.content a.button{font-size:18px;line-height:24px;display:inline-block}
+div.content.index .grid_4.img{width:33%;float:left;text-align:center;}
+div.content.index .grid_4.img img{width:100px}
+div.content.index .intro{padding:0 0 10px;}
+div.content.index .intro p{font-size:16px}
+div.content.index .references{margin-top:20px}
+div.content.index .reference{height:auto;}
+div.content.index .reference a{padding-top:10px;}
+div.content.index .reference a img{width:150px}
+div.content.services img.mockup{width:100%;margin-bottom:10px}
+div.content.competencies .grid_4 img{display:none}
+div.content.about img.portrait{display:none}
+div.content.about .resume_left{float:left;width:30%;display:inline;}
+div.content.about .resume_left b{white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;display:block;margin-bottom:-17px}
+div.content.about .resume_right{float:left;width:68%;display:inline;padding-left:2%}
+}
