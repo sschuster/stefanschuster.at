@@ -24,17 +24,10 @@ nav ul li a.active{color:#e5283a}
 .content div.intro p{font-size:30px;}
 .content div.intro p strong{font-weight:normal;color:#e5283a}
 .content div.portrait{text-align:center;margin-top:15px}
-.content div.references{margin-top:50px}
 .content div.resume_left{text-align:right;margin-bottom:20px}
 .content div.resume_right{margin-bottom:20px}
 .content a{color:#e5283a;}
 .content a:hover{color:#90111d}
-.content div.reference{height:100px;}
-.content div.reference a{opacity:.5;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);display:block;text-align:center;}
-.content div.reference a.mind42{padding-top:20.5px}
-.content div.reference a.spaaze{padding-top:19.5px}
-.content div.reference a.irian{padding-top:5.5px}
-.content div.reference a:hover{opacity:1;-ms-filter:none;filter:none}
 .content a.button{background-color:#e5283a;color:#fff;text-decoration:none;font-size:24px;line-height:40px;-webkit-border-radius:20px;border-radius:20px;padding:6px 20px;}
 .content a.button:hover{background-color:#ed6875}
 .content h1{color:#2b2828;font-size:30px;font-weight:bold;margin:10px 0 10px}
@@ -73,14 +66,16 @@ div.content.index .grid_4.img{width:33%;float:left;text-align:center;}
 div.content.index .grid_4.img img{width:100px}
 div.content.index .intro{padding:0 0 10px;}
 div.content.index .intro p{font-size:16px}
-div.content.index .references{margin-top:20px}
-div.content.index .reference{height:auto;}
-div.content.index .reference a{padding-top:10px;}
-div.content.index .reference a img{width:150px}
 div.content.services img.mockup{width:100%;margin-bottom:10px}
 div.content.competencies .grid_4 img{display:none}
 div.content.about img.portrait{display:none}
 div.content.about .resume_left{float:left;width:30%;display:inline;}
 div.content.about .resume_left b{white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;display:block;margin-bottom:-17px}
 div.content.about .resume_right{float:left;width:68%;display:inline;padding-left:2%}
+}div.references{margin-top:50px}
+div.reference{margin-bottom:20px;overflow:auto;}
+div.reference .logo a{display:block;text-align:center}
+@media (max-width: 568px){div.references{margin-top:20px}
+div.reference .logo{display:inline;float:left;width:100px;margin:10px;}
+div.reference .logo img{width:100px}
 }
