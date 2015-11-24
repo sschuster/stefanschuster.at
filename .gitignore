@@ -5,3 +5,8 @@ node_modules
 # Resource folder #
 ###################
 resources
+
+# Intelli J files #
+###################
+.idea/
+*.iml
