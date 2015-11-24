@@ -1,15 +1,12 @@
 {
     "name": "stefanschuster.at",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "private": true,
     "dependencies": {
-        "coffee-script": "1.7.1",
-        "express": "4.1.1",
-        "stylus": "0.34.0",
-        "nib": "1.0.2",
+        "express": "4.13.3",
+        "less-middleware": "2.0.1",
         "ect": "0.5.9",
-        "async": "0.8.0",
-        "locale": "0.0.15",
-        "lodash": "2.4.1"
+        "locale": "0.0.20",
+        "lodash": "3.10.1"
     }
 }
