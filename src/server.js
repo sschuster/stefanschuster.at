@@ -4,7 +4,14 @@ let path = require("path");
 let express = require("express");
 let ECT = require("ect");
 let lessMiddleware = require("less-middleware");
+let LessPluginAutoPrefix = require("less-plugin-autoprefix");
+let LessPluginCleanCSS = require("less-plugin-clean-css");
 let HomepageRouter = require("./routes/HomepageRouter");
+
+let autoprefixPlugin = new LessPluginAutoPrefix({
+    browsers: ["> 1%", "last 2 versions", "ie 9"]
+});
+let cleanCSSPlugin = new LessPluginCleanCSS();
 
 let app = express();
 
@@ -20,7 +27,10 @@ app.engine("ect", ectRenderer.render);
 
 //Setup middleware
 app.use("/css", lessMiddleware(path.join(__dirname, "styles"), {
-    dest: path.join(__dirname, "public/css")
+    dest: path.join(__dirname, "public/css"),
+    render: {
+        plugins: [autoprefixPlugin, cleanCSSPlugin]
+    }
 }));
 app.use(express.static(path.join(__dirname, "public")));
 
