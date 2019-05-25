@@ -1,9 +1,7 @@
-"use strict";
+const _ = require("lodash");
+const locale = require("locale");
 
-let _ = require("lodash");
-let locale = require("locale");
-
-let supportedLocales = new locale.Locales(["en", "de"]);
+const supportedLocales = new locale.Locales(["en", "de"]);
 
 exports.init = function(app) {
     app.get("/", localeRedirect);

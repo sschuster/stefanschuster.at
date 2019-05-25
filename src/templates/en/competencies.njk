@@ -1,8 +1,9 @@
-<% extend "layout" %>
-<% @CONTENTCLASS = "competencies" %>
-<% @TITLE = "Competencies" %>
-<% @METADESCRIPTION = "My main expertise is HTML5, CSS, JavaScript and mobile apps. Here's a detailed list of what technology I've experience with." %>
+{% extends "layout.njk" %}
+{% set TITLE = "Competencies" %}
+{% set CONTENTCLASS = "competencies" %}
+{% set METADESCRIPTION = "My main expertise is HTML5, CSS, JavaScript and mobile apps. Here's a detailed list of what technology I've experience with." %}
 
+{% block content %}
 <div class="grid_12">
     <h1>Competencies</h1>
     <p class="subheader">
@@ -85,3 +86,4 @@
     <img src="/img/consulting_mobile.png" alt="iOS and Android mobile app consulting" title="iOS and Android mobile app consulting">
 </div>
 <div class="clear"></div>
+{% endblock %}

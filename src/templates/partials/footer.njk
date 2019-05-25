@@ -1,14 +1,14 @@
 <footer>
     <div class="container_12">
         <div class="grid_12">
-            &copy; 2014 - 2016 Stefan Schuster
+            &copy; 2014 - 2019 Stefan Schuster
         </div>
         <div class="grid_12">
-            <% if @langActive == "en": %>
+            {% if langActive == 'en' %}
                 <a href="/en/imprint">Imprint</a>
-            <% else: %>
+            {% else %}
                 <a href="/de/imprint">Impressum</a>
-            <% end %>
+            {% endif %}
         </div>
         <div class="clear"></div>
     </div>    

@@ -1,7 +1,8 @@
-<% extend "layout" %>
-<% @CONTENTCLASS = "index" %>
-<% @METADESCRIPTION = "My name is Stefan Schuster and I'm a freelancer based in Vienna, Austria in the field of HTML5, CSS, JavaScript and mobile apps" %>
+{% extends "layout.njk" %}
+{% set CONTENTCLASS = "index" %}
+{% set METADESCRIPTION = "My name is Stefan Schuster and I'm a freelancer based in Vienna, Austria in the field of HTML5, CSS, JavaScript and mobile apps" %}
 
+{% block content %}
 <div class="grid_4 img">
     <img src="/img/consulting_html5.png" alt="HTML5, CSS3 and JavaScript consulting" title="HTML5, CSS3 and JavaScript consulting">
 </div>
@@ -22,7 +23,7 @@
         I offer services and consulting in the area of <strong>web application development</strong> and the creation of <strong>mobile apps</strong>.
     </p>
     <p>
-        <a class="button" href="/<%= @langActive %>/services">Services</a>
+        <a class="button" href="/{{ langActive }}/services">Services</a>
     </p>
 </div>
 <div class="grid_3 portrait">
@@ -45,8 +46,8 @@
 </div>
 <div class="grid_9 prefix_3">
     <p>        
-        <a class="button" href="/<%= @langActive %>/competencies">Competencies</a>
-        <a class="button" href="/<%= @langActive %>/about">About me</a>
+        <a class="button" href="/{{ langActive }}/competencies">Competencies</a>
+        <a class="button" href="/{{ langActive }}/about">About me</a>
     </p>
 </div>
 <div class="grid_12 references">
@@ -125,3 +126,4 @@
     </div>
 </div>
 <div class="clear"></div>
+{% endblock %}

@@ -1,0 +1,26 @@
+<nav>
+    <div class="container_12">
+        <ul>
+            <li>
+                <a href="/{{ langActive }}" class="{% if langPath == '' %}active{% endif %}">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="/{{ langActive }}/services" class="{% if langPath == '/services' %}active{% endif %}">
+                    {% if langActive == 'en' %}Services{% else %}Dienstleistungen{% endif %}
+                </a>
+            </li>
+            <li>
+                <a href="/{{ langActive }}/competencies" class="{% if langPath == '/competencies' %}active{% endif %}">
+                    {% if langActive == 'en' %}Competencies{% else %}Kompetenzen{% endif %}
+                </a>
+            </li>
+            <li>
+                <a href="/{{ langActive }}/about" class="{% if langPath == '/about' %}active{% endif %}">
+                    {% if langActive == 'en' %}About{% else %}Über mich{% endif %}
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

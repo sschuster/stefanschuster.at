@@ -1,8 +1,9 @@
-<% extend "layout" %>
-<% @CONTENTCLASS = "about" %>
-<% @TITLE = "Über mich" %>
-<% @METADESCRIPTION = "Über Stefan Schuster. Ich bin ein freiberuflicher Programmierer aus Wien. Meine Kompetenzen sind HTML5, CSS, JavaScript und mobile Apps." %>
+{% extends "layout.njk" %}
+{% set TITLE = "Über mich" %}
+{% set CONTENTCLASS = "about" %}
+{% set METADESCRIPTION = "Über Stefan Schuster. Ich bin ein freiberuflicher Programmierer aus Wien. Meine Kompetenzen sind HTML5, CSS, JavaScript und mobile Apps." %}
 
+{% block content %}
 <div class="grid_12">
     <h1>Über mich</h1>
 </div>
@@ -151,3 +152,4 @@
 </div>
 
 <div class="clear"></div>
+{% endblock %}

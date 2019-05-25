@@ -1,7 +1,8 @@
-<% extend "layout" %>
-<% @CONTENTCLASS = "index" %>
-<% @METADESCRIPTION = "Mein Name ist Stefan Schuster, und ich bin ein freiberuflicher Programmierer aus Wien mit den Spezialgebieten HTML5, CSS, JavaScript und mobile Applikationen" %>
+{% extends "layout.njk" %}
+{% set CONTENTCLASS = "index" %}
+{% set METADESCRIPTION = "Mein Name ist Stefan Schuster, und ich bin ein freiberuflicher Programmierer aus Wien mit den Spezialgebieten HTML5, CSS, JavaScript und mobile Applikationen" %}
 
+{% block content %}
 <div class="grid_4 img">
     <img src="/img/consulting_html5.png" alt="HTML5, CSS3 und JavaScript consulting" title="HTML5, CSS3 und JavaScript consulting">
 </div>
@@ -22,7 +23,7 @@
         Ich biete Dienstleistungen und Consulting im Bereich der <strong>Web-Entwicklung</strong> und der Erstellung von <strong>Apps</strong> an.
     </p>
     <p>
-        <a class="button" href="/<%= @langActive %>/services">Dienstleistungen</a>
+        <a class="button" href="/{{ langActive }}/services">Dienstleistungen</a>
     </p>
 </div>
 <div class="grid_3 portrait">
@@ -45,8 +46,8 @@
 </div>
 <div class="grid_9 prefix_3">
     <p>
-        <a class="button" href="/<%= @langActive %>/competencies">Kompetenzen</a>
-        <a class="button" href="/<%= @langActive %>/about">Über mich</a>
+        <a class="button" href="/{{ langActive }}/competencies">Kompetenzen</a>
+        <a class="button" href="/{{ langActive }}/about">Über mich</a>
     </p>
 </div>
 <div class="grid_12 references">
@@ -125,3 +126,4 @@
     </div>
 </div>
 <div class="clear"></div>
+{% endblock %}

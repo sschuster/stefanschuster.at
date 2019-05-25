@@ -1,8 +1,9 @@
-<% extend "layout" %>
-<% @CONTENTCLASS = "services" %>
-<% @TITLE = "Dienstleistungen" %>
-<% @METADESCRIPTION = "Ich biete Consulting und Dienstleistungen im Bereich HTML5, CSS, JavaScript und mobilen Applikationen. Egal ob es um eines Web-Projekts oder eine App geht." %>
+{% extends "layout.njk" %}
+{% set TITLE = "Dienstleistungen" %}
+{% set CONTENTCLASS = "services" %}
+{% set METADESCRIPTION = "Ich biete Consulting und Dienstleistungen im Bereich HTML5, CSS, JavaScript und mobilen Applikationen. Egal ob es um eines Web-Projekts oder eine App geht." %}
 
+{% block content %}
 <div class="grid_12">
     <h1>Dienstleistungen</h1>
 </div>
@@ -17,7 +18,7 @@
 <div class="grid_12">
     <h2>Was ich für Sie tun kann</h2>
     <p>
-        Auf der Seite <a href="/<%= @langActive %>/competencies">Kompetenzen</a> finden Sie eine detaillierte Auflistung meines technischen Fachwissens. Darum möchte ich an dieser Stelle aufzeigen, wobei ich Sie damit unterstützen kann. Hier ein paar Beispiele:
+        Auf der Seite <a href="/{{ langActive }}/competencies">Kompetenzen</a> finden Sie eine detaillierte Auflistung meines technischen Fachwissens. Darum möchte ich an dieser Stelle aufzeigen, wobei ich Sie damit unterstützen kann. Hier ein paar Beispiele:
     </p>
     <ul>
         <li>
@@ -75,3 +76,4 @@
 </div>
 
 <div class="clear"></div>
+{% endblock %}

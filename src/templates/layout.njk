@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <% if @TITLE: %>
-            <title><%= @TITLE %> - HTML5, CSS, JavaScript, node.js and mobile app development</title>
-        <% else: %>
+        {% if TITLE %}
+            <title>{{ TITLE }} - HTML5, CSS, JavaScript, node.js and mobile app development</title>
+        {% else %}
             <title>Stefan Schuster Consulting - HTML5, CSS, JavaScript, node.js and mobile app development</title>
-        <% end %>
+        {% endif %}
 
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700" type="text/css">
         <link rel="stylesheet" href="/css/normalize.css" type="text/css">
         <link rel="stylesheet" href="/css/grid.css" type="text/css">
         <link rel="stylesheet" href="/css/style.css" type="text/css">
 
-        <script src="/js/modernizr.js"></script>
-
         <meta name="author" content="Stefan Schuster">
         <meta name="publisher" content="Stefan Schuster">
         <meta name="keywords" content="consulting,service,programming,html,html5,css,css3,javascript,js,node.js,express,coffeescript,typescript,ios,android,apps,mobile">
-        <% if @METADESCRIPTION: %>
-            <meta name="description" content="<%= @METADESCRIPTION %>">
-        <% end %>
+        {% if METADESCRIPTION %}
+            <meta name="description" content="{{ METADESCRIPTION }}">
+        {% endif %}
 
         <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">-->
         <meta id="viewport" name="viewport" content="width=980">
@@ -33,11 +31,11 @@
         </script>
     </head>
     <body>
-        <% include "partials/header" %>
-        <% include "partials/menu" %>
-        <div class="content container_12 <%= if @CONTENTCLASS then @CONTENTCLASS else "" %>">
-            <% content %>
+        {% include "partials/header.njk" %}
+        {% include "partials/menu.njk" %}
+        <div class="content container_12 {{ CONTENTCLASS }}">
+            {% block content %}{% endblock %}
         </div>        
-        <% include "partials/footer" %>
+        {% include "partials/footer.njk" %}
     </body>
 </html>

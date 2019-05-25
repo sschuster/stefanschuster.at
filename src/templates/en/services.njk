@@ -1,8 +1,9 @@
-<% extend "layout" %>
-<% @CONTENTCLASS = "services" %>
-<% @TITLE = "Services" %>
-<% @METADESCRIPTION = "I offer consulting and services in the area of HTML5, CSS, JavaScript and mobile apps. Whether you need help with your web project, or the programming of a mobile app." %>
+{% extends "layout.njk" %}
+{% set TITLE = "Services" %}
+{% set CONTENTCLASS = "services" %}
+{% set METADESCRIPTION = "I offer consulting and services in the area of HTML5, CSS, JavaScript and mobile apps. Whether you need help with your web project, or the programming of a mobile app." %}
 
+{% block content %}
 <div class="grid_12">
     <h1>Services</h1>
 </div>
@@ -15,7 +16,7 @@
 <div class="grid_12">
     <h2>What can I do for you?</h2>
     <p>
-        Over at the <a href="/<%= @langActive %>/competencies">competencies page</a> you'll see what technical skills I have. But what kind of work can I do for you using those skills? Here are some examples:
+        Over at the <a href="/{{ langActive }}/competencies">competencies page</a> you'll see what technical skills I have. But what kind of work can I do for you using those skills? Here are some examples:
     </p>
     <ul>
         <li>
@@ -73,3 +74,4 @@
 </div>
 
 <div class="clear"></div>
+{% endblock %}
