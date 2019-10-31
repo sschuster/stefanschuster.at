@@ -21,7 +21,7 @@
         "less-plugin-autoprefix": "2.0.0",
         "less-plugin-clean-css": "1.5.1",
         "locale": "0.1.0",
-        "lodash": "4.17.11",
+        "lodash": "4.17.13",
         "nunjucks": "3.2.0"
     },
     "scripts": {
