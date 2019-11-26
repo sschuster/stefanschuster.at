@@ -1,41 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        {% if TITLE %}
-            <title>{{ TITLE }} - HTML5, CSS, JavaScript, node.js and mobile app development</title>
-        {% else %}
-            <title>Stefan Schuster Consulting - HTML5, CSS, JavaScript, node.js and mobile app development</title>
-        {% endif %}
+<head>
+    {% if TITLE %}
+    <title>{{ TITLE }} - Full-Stack JavaScript Developer - Node.js, Typescript, Angular, mobile app development and more</title>
+    {% else %}
+    <title>Stefan Schuster Consulting - Full-Stack JavaScript Developer - Node.js, Typescript, Angular, mobile app development and more</title>
+    {% endif %}
 
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700" type="text/css">
-        <link rel="stylesheet" href="/css/normalize.css" type="text/css">
-        <link rel="stylesheet" href="/css/grid.css" type="text/css">
-        <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <meta name="author" content="Stefan Schuster">
+    <meta name="publisher" content="Stefan Schuster">
+    {% if langActive == 'de' %}
+    <meta name="keywords" content="freelancer,programmierer,consulting,software,entwicklung,javascript,typescript,node,node.js,angular,vue,express,hapi,ios,swift,mobile,es6,html5,css3">
+    {% else %}
+    <meta name="keywords" content="freelancer,programmer,consulting,software,development,javascript,typescript,node,node.js,angular,vue,express,hapi,ios,swift,mobile,es6,html5,css3">
+    {% endif %}
+    {% if METADESCRIPTION %}
+    <meta name="description" content="{{ METADESCRIPTION }}">
+    {% endif %}
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
 
-        <meta name="author" content="Stefan Schuster">
-        <meta name="publisher" content="Stefan Schuster">
-        <meta name="keywords" content="consulting,service,programming,html,html5,css,css3,javascript,js,node.js,express,coffeescript,typescript,ios,android,apps,mobile">
-        {% if METADESCRIPTION %}
-            <meta name="description" content="{{ METADESCRIPTION }}">
-        {% endif %}
-
-        <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">-->
-        <meta id="viewport" name="viewport" content="width=980">
-        <meta name="format-detection" content="telephone=no">
-
-        <script>
-            if (window.outerWidth <= 568) {
-                var viewport = document.getElementById("viewport");
-                viewport.setAttribute("content", "width=device-width,initial-scale=1.0,user-scalable=no");
-            }
-        </script>
-    </head>
-    <body>
-        {% include "partials/header.njk" %}
-        {% include "partials/menu.njk" %}
-        <div class="content container_12 {{ CONTENTCLASS }}">
-            {% block content %}{% endblock %}
-        </div>        
-        {% include "partials/footer.njk" %}
-    </body>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+<div id="page">
+    {% include "partials/header.njk" %}
+    {% include "partials/menu.njk" %}
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+    {% include "partials/footer.njk" %}
+</div>
+</body>
 </html>

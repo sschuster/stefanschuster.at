@@ -1,5 +1,7 @@
 <nav>
-    <div class="container_12">
+    <i class="fas fa-bars"></i>
+    <div class="menu">
+        <i class="fas fa-times"></i>
         <ul>
             <li>
                 <a href="/{{ langActive }}" class="{% if langPath == '' %}active{% endif %}">
@@ -23,4 +25,29 @@
             </li>
         </ul>
     </div>
+    <ul class="lang">
+        <li class="{% if langActive == 'de'%}active{% endif %}">
+            <a href="/de{{ langPath }}">DE</a>
+        </li>
+        <li class="{% if langActive == 'en'%}active{% endif %}">
+            <a href="/en{{ langPath }}">EN</a>
+        </li>
+    </ul>
+    <script>
+        const buttonShow = document.querySelector("nav > i");
+        const buttonHide = document.querySelector("nav > div.menu > i");
+        const menu = document.querySelector("nav > div.menu");
+        buttonShow.addEventListener("click", () => {
+            menu.style.display = "block";
+            menu.style.transform = "translateX(-100%)";
+            menu.offsetHeight;
+            menu.style.transform = null;
+        }, false);
+        buttonHide.addEventListener("click", () => {
+            menu.style.transform = "translateX(-100%)";
+            setTimeout(() => {
+                menu.style.display = "none";
+            }, 500);
+        }, false);
+    </script>
 </nav>

@@ -3,6 +3,98 @@
 {% set METADESCRIPTION = "My name is Stefan Schuster and I'm a freelancer based in Vienna, Austria in the field of HTML5, CSS, JavaScript and mobile apps" %}
 
 {% block content %}
+<div class="poster">
+    <h2>Stefan Schuster</h2>
+    <h3>Full-stack JavaScript developer, <span class="cyan">mobile developer</span>, ...</h3>
+    <section class="data">
+        <img src="/img/portrait.jpg">
+        <ul class="facts">
+            <li>
+                <strong>Core competencies:</strong> Web and mobile development
+            </li>
+            <li>
+                <strong>Services offered:</strong> Web projects of any complexity (from simple homepages to complex single page applications), Web Hosting, Mobile App Development (iOS, Android, Mobile Web)
+            </li>
+            <li>
+                <strong>Home:</strong> Vienna, Austria
+            </li>
+            <li>
+                <strong>Contact:</strong> <a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a>
+            </li>
+        </ul>
+    </section>
+    <script>
+        (function() {
+            const span = document.querySelector(".content .poster h3 span");
+            const colors = ["cyan", "purple", "orange", "red", "dark-red", "teal", "blue", "burgundy", "snow", "green"];
+            const titles = [
+                "Typescript developer",
+                "Angular developer",
+                "Vue.js developer",
+                "Node.js developer",
+                "Redux developer",
+                "async developer",
+                "template developer",
+                "Express/HAPI developer",
+                "REST developer",
+                "API developer",
+                "mobile developer",
+                "Cordova developer",
+                "PHP developer",
+                "Laravel developer",
+                "iOS developer",
+                "Objective-C developer",
+                "Swift developer",
+                "web developer",
+                "Docker developer",
+                "frontend developer",
+                "backend developer",
+                "MySQL developer",
+                "Postgres developer",
+                "database developer"
+            ];
+            const changeTitle = function() {
+                let newColor = null;
+                while (!newColor) {
+                    newColor = colors[Math.min(colors.length - 1, Math.floor(Math.random() * colors.length))];
+                    if (newColor === span.className) {
+                        newColor = null;
+                    }
+                }
+                let newText = null;
+                while (!newText) {
+                    newText = titles[Math.min(titles.length - 1, Math.floor(Math.random() * titles.length))];
+                    if (newText === span.innerText) {
+                        newText = null;
+                    }
+                }
+                let promise = Promise.resolve();
+                for (let i = span.innerText.length - 1; i >= 0; i--) {
+                    promise = promise.then(() => {
+                        span.innerText = span.innerText.substr(0, span.innerText.length - 1);
+                        return new Promise((resolve) => { setTimeout(resolve, 30); });
+                    });
+                }
+                promise = promise.then(() => {
+                    span.className = newColor;
+                });
+                for (let i = 0; i < newText.length; i++) {
+                    promise = promise.then(() => {
+                        span.innerText = newText.substr(0, span.innerText.length + 1);
+                        return new Promise((resolve) => { setTimeout(resolve, 30); });
+                    });
+                }
+                promise.then(() => {
+                    setTimeout(changeTitle, 3000);
+                });
+            };
+            setTimeout(changeTitle, 3000);
+        })();
+    </script>
+</div>
+{% endblock %}
+
+{% block old_content %}
 <div class="grid_4 img">
     <img src="/img/consulting_html5.png" alt="HTML5, CSS3 and JavaScript consulting" title="HTML5, CSS3 and JavaScript consulting">
 </div>

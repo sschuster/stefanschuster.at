@@ -1,23 +1,37 @@
-<header>    
-    <div class="container_12">
-        <div class="grid_6 logo">
-            <h1>
-                <a href="/{{ langActive }}">
-                    <span class="firstname">Stefan</span>
-                    <span class="lastname">Schuster</span>
-                    <span class="tagline">Consulting</span>
-                </a>
-            </h1>
-        </div>
-        <div class="grid_6 language">
-            <ul>
-                <li class="first {% if langActive == 'de'%}active{% endif %}">
-                    <a href="/de{{ langPath }}">DE</a>
-                </li>
-                <li class="last {% if langActive == 'en'%}active{% endif %}">
-                    <a href="/en{{ langPath }}">EN</a>
-                </li>
-            </ul>
-        </div>
+<header>
+    <h1 class="logo">
+        <a href="/{{ langActive }}">
+            <span class="firstname">Stefan</span>
+            <span class="lastname">Schuster</span>
+            <span class="tagline">Consulting</span>
+        </a>
+    </h1>
+    <div class="bars">
+        <div class="cyan"></div>
+        <div class="purple"></div>
+        <div class="orange"></div>
+        <div class="red"></div>
     </div>
+    <script>
+        (function() {
+            const bars = document.querySelectorAll("header .bars > div");
+            const colors = ["cyan", "purple", "orange", "red", "black", "dark-red", "teal", "blue", "burgundy", "snow", "green"];
+            const changeColor = function() {
+                const barIndex = Math.min(bars.length - 1, Math.floor(Math.random() * bars.length));
+                const bar = bars[barIndex];
+                let newColor = null;
+                while (!newColor) {
+                    newColor = colors[Math.min(colors.length - 1, Math.floor(Math.random() * colors.length))];
+                    if (newColor === bar.className ||
+                        (barIndex > 0 && newColor === bars[barIndex - 1].className) ||
+                        (barIndex < bars.length - 1 && newColor === bars[barIndex + 1].className)) {
+                        newColor = null;
+                    }
+                }
+                bar.className = newColor;
+                setTimeout(changeColor, 5000 + Math.random() * 10000);
+            };
+            setTimeout(changeColor, 5000 + Math.random() * 10000);
+        })();
+    </script>
 </header>

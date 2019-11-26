@@ -1,35 +1,32 @@
+@import "mixins/normalize";
+@import "mixins/fonts";
 @import "mixins/variables";
 @import "mixins/functions";
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
 
 body {
+  background: #777;
   color: @cMainText;
   font-family: Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 1.23;
-  background: @cBackMain;
 }
 
-.onMobile({
-  body {
-    min-width: initial;
-  }
+div#page {
+  margin: 0 auto;
+  max-width: 960px;
+  background: white;
 
-  .container_12 {
-    width: auto;
+  > .content{
+    margin: 10px;
+    overflow: hidden;
 
-    .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
-      display: block;
-      width: auto;
-      float: none;
-      margin: 0;
-    }
-
-    .prefix_1, .prefix_2, .prefix_3, .prefix_4, .prefix_5, .prefix_6, .prefix_7, .prefix_8, .prefix_9, .prefix_10, .prefix_11,
-    .suffix_1, .suffix_2, .suffix_3, .suffix_4, .suffix_5, .suffix_6, .suffix_7, .suffix_8, .suffix_9, .suffix_10, .suffix_11 {
-      padding: 0;
+    a {
+      color: @cAccentRed;
     }
   }
-});
+}
 
 @import "components/header";
 @import "components/menu";

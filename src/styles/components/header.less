@@ -2,143 +2,113 @@
 @import "../mixins/functions";
 
 header {
-  height: 110px;
-  background: @cBackHead;
-
-  div.grid_6 {
-    height: 110px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   h1 {
-    margin: 0;
-    padding-top: 11px;
+    flex: auto;
+    margin: 10px;
 
     a {
       text-decoration: none;
+      color: @cMainText;
     }
 
     span {
       font-family: 'Ubuntu',sans-serif;
       display: block;
-      line-height: 50px;
-      font-size: 50px;
-      color: white;
+      line-height: 30px;
+      font-size: 30px;
 
       &.firstname {
         font-weight: 400;
         text-transform: lowercase;
         float: left;
-        padding-bottom: 35px;
+        padding-bottom: 10px;
       }
 
       &.lastname {
-        color: @cMainText;
+        color: @cAccentCyan;
         font-weight: 700;
         text-transform: lowercase;
       }
 
       &.tagline {
         font-weight: 300;
-        font-size: 34px;
-        line-height: 34px;
+        font-size: 21px;
+        line-height: 21px;
         text-transform: uppercase;
       }
     }
   }
 
-  ul {
-    list-style-type: none;
-    display: block;
-    margin: 0;
-    padding: 0;
-    height: 30px;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
+  div.bars {
+    display: flex;
+    overflow: hidden;
 
-    li {
-      display: block;
-      margin: 0;
-      padding: 0;
-      width: 40px;
-      height: 30px;
-      background: @cMainText;
-      float: left;
-      text-align: center;
+    > div {
+      width: 20px;
+      height: 75px;
+      transform-origin: bottom right;
+      transform: skewX(-20deg);
+      transition: background 0.5s;
 
-      a {
-        text-decoration: none;
-        color: @cBackMain;
-        line-height: 30px;
-
-        &:hover {
-          font-weight: bold;
-        }
+      &.cyan {
+        background: @cAccentCyan;
+      }
+      &.purple {
+        background: @cAccentPurple;
+      }
+      &.orange {
+        background: @cAccentOrange;
+      }
+      &.red {
+        background: @cAccentRed;
+      }
+      &.black {
+        background: @cMainText;
+      }
+      &.dark-red {
+        background: @cAccentDarkRed;
+      }
+      &.teal {
+        background: @cAccentTeal;
+      }
+      &.blue {
+        background: @cAccentBlue;
+      }
+      &.burgundy {
+        background: @cAccentBurgundy;
+      }
+      &.snow {
+        background: @cAccentSnow;
+      }
+      &.green {
+        background: @cAccentGreen;
       }
 
-      &.first {
-        border-radius: 5px 0 0 5px;
-      }
-
-      &.last {
-        border-radius: 0 5px 5px 0;
-      }
-
-      &.active {
-        background: lighten(@cMainText, 10%);
-
-        a {
-          font-weight: bold;
-        }
+      &:last-child {
+        width: 30px;
       }
     }
   }
 }
 
-.onMobile({
+.onDesktop({
   header {
-    div.grid_6.logo {
-      height: 80px;
-      padding: 0 10px;
+    h1 span {
+      line-height: 50px;
+      font-size: 50px;
 
-      h1 {
-        padding-top: 5px;
-
-        span {
-          font-size: 40px;
-          line-height: 40px;
-
-          &.firstname {
-            padding-bottom: 28px;
-          }
-
-          &.tagline {
-            font-size: 28px;;
-            line-height: 28px;;
-          }
-        }
+      &.tagline {
+        font-size: 34px;
+        line-height: 34px;
       }
     }
 
-    div.grid_6.language {
-      height: auto;
-      background: @cMainText;
-
-      ul {
-        position: static;
-
-        li {
-          width: 50%;
-
-          &.first {
-            border-radius: 0;
-          }
-
-          &.last {
-            border-radius: 0;
-          }
-        }
-      }
+    div.bars > div {
+      height: 105px;
     }
   }
 });
