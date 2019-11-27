@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head>
-    {% if TITLE %}
-    <title>{{ TITLE }} - Full-Stack JavaScript Developer - Node.js, Typescript, Angular, mobile app development and more</title>
-    {% else %}
-    <title>Stefan Schuster Consulting - Full-Stack JavaScript Developer - Node.js, Typescript, Angular, mobile app development and more</title>
-    {% endif %}
+<html lang="{{ langActive }}">
+    <head>
+        {% if TITLE %}
+            <title>{{ TITLE }} - Full-Stack JavaScript Developer - Node.js, Typescript, Angular, mobile app development and more</title>
+        {% else %}
+            <title>Stefan Schuster Consulting - Full-Stack JavaScript Developer - Node.js, Typescript, Angular, mobile app development and more</title>
+        {% endif %}
 
-    <meta name="author" content="Stefan Schuster">
-    <meta name="publisher" content="Stefan Schuster">
-    {% if langActive == 'de' %}
-    <meta name="keywords" content="freelancer,programmierer,consulting,software,entwicklung,javascript,typescript,node,node.js,angular,vue,express,hapi,ios,swift,mobile,es6,html5,css3">
-    {% else %}
-    <meta name="keywords" content="freelancer,programmer,consulting,software,development,javascript,typescript,node,node.js,angular,vue,express,hapi,ios,swift,mobile,es6,html5,css3">
-    {% endif %}
-    {% if METADESCRIPTION %}
-    <meta name="description" content="{{ METADESCRIPTION }}">
-    {% endif %}
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-    <meta name="format-detection" content="telephone=no">
+        <meta name="author" content="Stefan Schuster">
+        <meta name="publisher" content="Stefan Schuster">
+        {% if langActive == 'de' %}
+            <meta name="keywords" content="freelancer,programmierer,consulting,software,entwicklung,javascript,typescript,node,node.js,angular,vue,express,hapi,ios,swift,mobile,es6,html5,css3">
+        {% else %}
+            <meta name="keywords" content="freelancer,programmer,consulting,software,development,javascript,typescript,node,node.js,angular,vue,express,hapi,ios,swift,mobile,es6,html5,css3">
+        {% endif %}
+        {% if METADESCRIPTION %}
+            <meta name="description" content="{{ METADESCRIPTION }}">
+        {% endif %}
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
 
-    <link rel="stylesheet" href="/css/style.css" type="text/css">
-</head>
-<body>
-<div id="page">
-    {% include "partials/header.njk" %}
-    {% include "partials/menu.njk" %}
-    <div class="content">
-        {% block content %}{% endblock %}
-    </div>
-    {% include "partials/footer.njk" %}
-</div>
-</body>
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+    </head>
+    <body>
+        <div id="page">
+            {% include "partials/header.njk" %}
+            {% include "partials/menu.njk" %}
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+            {% include "partials/footer.njk" %}
+        </div>
+    </body>
 </html>

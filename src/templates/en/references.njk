@@ -1,0 +1,96 @@
+{% extends "layout.njk" %}
+{% set TITLE = "References" %}
+
+{% block content %}
+<div class="references">
+    <h1>References</h1>
+    <p>
+        An excerpt of my projects and clients.
+    </p>
+    <ul>
+        <li>
+            <h2>Mind42:</h2>
+            <p>
+                <a href="/img/ref_mind42_large.jpg" target="_blank">
+                    <img src="/img/ref_mind42_small.jpg">
+                </a>
+                Mind42 is a free cloud based mind mapping software. Like Google Docs & Spreadsheets or other SaaS
+                (Software as a Service) solutions, this service allows users to create documents - in this case mind maps
+                - within their browser and collaborate with other users. It's an older service pending a rewrite I continue
+                to completely run, maintain and develop on my own. This includes server administration, backend development
+                (node.js) and frontend development (Dojo).
+                <br>
+                <a href="https://mind42.com" target="_blank">https://mind42.com</a>
+            </p>
+        </li>
+        <li>
+            <h2>Castl:</h2>
+            <img src="/img/ref_castl.png">
+            Castl is a new social media app on iOS and Android. I'm the front end lead in this project and main developer
+            of the iOS native part and Cordova webviews within the app. The native iOS app is written in Swift, the webviews
+            use Angular. It's a unique combination of native and web content reducing the cost of maintaining Android and
+            iOS apps and uses JSON REST APIs to communicate with the PHP/Laravel server.
+            <br>
+            <a href="https://castl.rocks" target="_blank">https://castl.rocks</a>
+        </li>
+        <li>
+            <h2>oneStep2:</h2>
+            <img src="/img/ref_onestep2.png">
+            The oneStep2 GmbH is an Austrian IT service provider specialized on monitoring and (server) infrastructure,
+            lead by a long known and trusted colleague of mine. Together with oneStep2 multiple homepages (mostly based
+            on Drupal) and app projects (native Android and iOS as well as Cordova based web-apps). The latest project
+            was a completely custom, high availability, high security web shop for medical products using a Node.js backend
+            (HAPI) and an Angular Frontend.
+        </li>
+        <li>
+            <h2>localstorage:</h2>
+            <img src="/img/ref_localstorage.png">
+            localstorage is a Viennese real estate business which rents storage rooms to interested clients online on
+            their homepage. I was entrusted to completely rebuild the homepage based on a PHP stack. The final product
+            is based on the Laravel PHP Framework and includes payment processing for Paypal and EPS. On the frontend
+            AngularJS, LESS and SVG have been used.
+        </li>
+        <li>
+            <h2>Sample+:</h2>
+            <img src="/img/ref_sampleplus.png">
+            Sample+ is a Viennese market research startup that distributed product samples to customers for free in
+            exchange for their opinion. I was tasked to create the homepage and a custom tailored survey engine
+            including the creation of associated reports. The project is based on Laravel.
+        </li>
+        <li>
+            <h2>ProLion:</h2>
+            <a href="/img/ref_prolion_large.jpg" target="_blank">
+                <img src="/img/ref_prolion_small.jpg">
+            </a>
+            ProLion is an Austrian company providing services around storage solutions. I helped rewriting their main
+            product backend and frontend to use modern standards like MQTT to create a better product (less data usage,
+            more fault tolerant, ...). The backend was written using Typescript, HAPI and Node.js and it shared some
+            Typescript code with the Angular based frontend.
+        </li>
+        <li>
+            <h2>Jollydays:</h2>
+            <img src="/img/ref_jollydays.png">
+            Jollydays is an Austrian company selling gift vouchers. For one of their projects I repeatedly helped implementing
+            the web app. First by preparing the website for mobile use by reorganizing their LESS sources, creating a component
+            library and implementing and integrating mobile versions of the components. Later by work on the AngularJS
+            app in general.
+        </li>
+        <li>
+            <h2>all about apps:</h2>
+            <img src="/img/ref_allaboutapps.png">
+            all about apps is an Austrian company providing mobile solutions from app development to consulting. For
+            all about apps I participated in multiple projects in the creation of node.js based backends, providing JSON
+            based REST services for the apps (including persistence, authorization, ...).
+        </li>
+        <li>
+            <h2>Irian:</h2>
+            <img src="/img/ref_irian.png">
+            IRIAN Solutions GmbH is a Vienna based consulting company, focused on Enterprise Java and Open Source.
+            It's my former employer, but also after becoming self-employed I was happy to see this company among my
+            customers. My work for IRIAN Solutions included consulting and development work for clients like
+            Credite Suisse and Bundesrechenzentrum GmbH, as well as for internal projects. Most of my work for IRIAN
+            was in the field of HTML, CSS and JavaScript.
+        </li>
+    </ul>
+</div>
+{% endblock %}

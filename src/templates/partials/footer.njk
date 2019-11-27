@@ -1,15 +1,14 @@
 <footer>
-    <div class="container_12">
-        <div class="grid_12">
-            &copy; 2014 - 2019 Stefan Schuster
-        </div>
-        <div class="grid_12">
+    <section class="copyright">
+        &copy; 2014 - {{ year }} Stefan Schuster
+    </section>
+    <ul class="footer-menu">
+        <li>
             {% if langActive == 'en' %}
                 <a href="/en/imprint">Imprint</a>
             {% else %}
                 <a href="/de/imprint">Impressum</a>
             {% endif %}
-        </div>
-        <div class="clear"></div>
-    </div>    
+        </li>
+    </ul>
 </footer>

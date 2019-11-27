@@ -1,9 +1,7 @@
 {% extends "layout.njk" %}
-{% set CONTENTCLASS = "index" %}
-{% set METADESCRIPTION = "My name is Stefan Schuster and I'm a freelancer based in Vienna, Austria in the field of HTML5, CSS, JavaScript and mobile apps" %}
 
 {% block content %}
-<div class="poster">
+<div class="home">
     <h2>Stefan Schuster</h2>
     <h3>Full-stack JavaScript developer, <span class="cyan">mobile developer</span>, ...</h3>
     <section class="data">
@@ -13,19 +11,61 @@
                 <strong>Core competencies:</strong> Web and mobile development
             </li>
             <li>
-                <strong>Services offered:</strong> Web projects of any complexity (from simple homepages to complex single page applications), Web Hosting, Mobile App Development (iOS, Android, Mobile Web)
+                <strong>Services offered:</strong> Web projects of any complexity (from simple homepages to complex single page applications), Web Hosting, Mobile App Development
             </li>
             <li>
-                <strong>Home:</strong> Vienna, Austria
+                <strong>Hometown:</strong> Vienna, Austria
             </li>
             <li>
-                <strong>Contact:</strong> <a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a>
+                <strong>More infos:</strong>
+                <ul>
+                    <li>
+                        <a href="/en/skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="/en/references">References</a>
+                    </li>
+                    <li>
+                        <a href="/en/about">About</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Contact:</strong><br>
+                <a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a>
             </li>
         </ul>
     </section>
+    <section class="details">
+        <h4>
+            About me
+        </h4>
+        <p>
+            I'm a <strong>freelance software developer</strong> in <strong>Vienna, Austria</strong> with more than 15 years of experience working in IT.
+            I describe myself as <strong>fullstack JavaScript developer</strong> because that's my passion, but I'm really an allround
+            programmer with focus on <strong>web and mobile development</strong>.
+        </p>
+        <p>
+            <img src="/img/consulting_html5.png" align="right">
+            I'm an expert with all things related to JavaScript, from vanilla JS snippets on homepages, to jQuery, to
+            <strong>single page application</strong> development with <strong>Angular</strong> (or React or Vue.js) or backend development with <strong>Node.js</strong>
+            (using Express, HAPI and the like). Of course this includes all skills related to this like <strong>Typescript</strong>,
+            strong frontend knowledge (HTML, CSS), databases (MySQL, Postgres, Redis, some NoSQL databases like Couchbase
+            and CouchDB, ...), APIs (using REST, and various data formats like JSON, XML, ...) and various other things
+            (like queues with RabbitMQ, or MQTT). Since I run my own services I'm also familiar with deploying such
+            services on Linux, which includes the occasional use of AWS, creating Dockerfiles, setting up automated builds
+            in Gitlab and so on.
+        </p>
+        <p>
+            But as an <strong>allrounder</strong>, this is not everything I've collected knowledge with. For <strong>mobile app development</strong> I'm also
+            active as an iOS developer using Swift, I take care of some PHP sites, and I with all that experiences I'm
+            usually pretty quick getting into new frameworks and languages. To get a full overview of the technologies
+            I've worked with visit the <a href="/en/skills">skills</a> page.
+        </p>
+    </section>
     <script>
         (function() {
-            const span = document.querySelector(".content .poster h3 span");
+            const span = document.querySelector(".home h3 span");
             const colors = ["cyan", "purple", "orange", "red", "dark-red", "teal", "blue", "burgundy", "snow", "green"];
             const titles = [
                 "Typescript developer",
@@ -92,130 +132,4 @@
         })();
     </script>
 </div>
-{% endblock %}
-
-{% block old_content %}
-<div class="grid_4 img">
-    <img src="/img/consulting_html5.png" alt="HTML5, CSS3 and JavaScript consulting" title="HTML5, CSS3 and JavaScript consulting">
-</div>
-<div class="grid_4 img">
-    <img src="/img/consulting_nodejs.png" alt="Node.js consulting" title="Node.js consulting">
-</div>
-<div class="grid_4 img">
-    <img src="/img/consulting_mobile.png" alt="iOS and Android mobile app consulting" title="iOS and Android mobile app consulting">
-</div>
-<div class="grid_12 intro">
-    <p>
-        Hi, my name is Stefan Schuster and I'm a freelancer based in Vienna, Austria.
-    </p>
-    <p>
-        I'm an expert in the field of <strong>HTML5</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> and <strong>mobile</strong>.
-    </p>
-    <p>
-        I offer services and consulting in the area of <strong>web application development</strong> and the creation of <strong>mobile apps</strong>.
-    </p>
-    <p>
-        <a class="button" href="/{{ langActive }}/services">Services</a>
-    </p>
-</div>
-<div class="grid_3 portrait">
-    <img src="/img/portrait.png" alt="Stefan Schuster" title="Stefan Schuster">
-</div>
-<div class="grid_5">
-    <h2>About</h2>
-    <p>
-        I'm a software engineer living in Vienna, Austria. I've collected over 7 years of experience in the fields of software engineering and consulting. During the last years, I've participated and lead many projects; internally, as well as for external clients; mastering a lot of different technologies.
-    </p>
-</div>
-<div class="grid_4">
-    <h2>Contact</h2>
-    <ul>
-        <li><a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a></li>
-        <li><a href="http://at.linkedin.com/in/schusterstefan" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.xing.com/profile/Stefan_Schuster10" target="_blank">XING</a></li>
-        <li><a href="https://github.com/sschuster" target="_blank">GitHub</a></li>
-    </ul>
-</div>
-<div class="grid_9 prefix_3">
-    <p>        
-        <a class="button" href="/{{ langActive }}/competencies">Competencies</a>
-        <a class="button" href="/{{ langActive }}/about">About me</a>
-    </p>
-</div>
-<div class="grid_12 references">
-    <h2>References</h2>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://mind42.com" target="_blank" class="mind42">
-            <img src="/img/ref_mind42.png" alt="Mind42.com - Free online mind mapping software" title="Mind42.com - Free online mind mapping software">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            Mind42 is a free cloud based mind mapping software. Like Google Docs &amp; Spreadsheets or other SaaS (Software as a Service) solutions, this service allows users to create documents - in this case mind maps - within their browser and collaborate with other users. I continue to run, maintain and develop this software, which includes server administration, backend development (node.js) and frontend development (Dojo).
-        </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://irian.at" target="_blank" class="irian">
-            <img src="/img/ref_irian.png" alt="IRIAN Solutions - The software experts" title="IRIAN Solutions - The software experts">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            IRIAN Solutions GmbH is a Vienna based consulting company, focused on Enterprise Java and Open Source. It's my former employer, but also after becoming self-employed I'm happy to see this company among my customers. My work for IRIAN Solutions includes consulting and development work for clients like Credite Suisse and Bundesrechenzentrum GmbH, as well as for internal projects. Most of my work for IRIAN was in the field of HTML, CSS and JavaScript.
-        </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://www.jollydays.at" target="_blank" class="jollydays">
-            <img src="/img/ref_jollydays.png" alt="Jollydays - Geschenke und Geschenkideen" title="Jollydays - Geschenke und Geschenkideen">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            Jollydays is an Austrian company selling gift vouchers. For their new project - makeyourday.com - I helped preparing the website for mobile use by reorganizing their LESS sources, creating a component library and implementing mobile versions of the components. Besides preparing and reorgnaizing the styling, I also helped integrating the new code into the AngularJS based web app.
-        </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://www.onestep2.at" target="_blank" class="onestep2">
-            <img src="/img/ref_onestep2.png" alt="oneStep2 - IT-Beratung und Dienstleistungen" title="oneStep2 - IT-Beratung und Dienstleistungen">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            The oneStep2 GmbH is an Austrian IT service provider specialized on monitoring and (network) infrastructure, lead by a long known and trusted colleague of mine. Together with oneStep2 I successfully finished multiple homepages (mostly based on Drupal, like motorradreporter.com) and app projects (native Android and iOS as well as Cordova based web-apps).
-        </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="https://www.allaboutapps.at" target="_blank" class="allaboutapps">
-            <img src="/img/ref_allaboutapps.png" alt="all about apps - Mobile Solutions für Ihr Unternehmen" title="all about apps - Mobile Solutions für Ihr Unternehmen">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            all about apps is an Austrian company providing mobile solutions from app development to consulting. For all about apps I participated in multiple projects in the creation of node.js based backends, providing JSON based REST services for the apps (including persistence, authorization, ...).
-        </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://www.localstorage.at" target="_blank" class="localstorage">
-            <img src="/img/ref_localstorage.png" alt="Local-Storage Wien: Der günstige Lagerraum gleich in Ihrer Nähe">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            localstorage is a Viennese real estate business which rents storage rooms to interested clients online on their homepage. I was entrusted to completely rebuild the homepage based on a PHP stack. The final product is based on the Laravel PHP Framework and includes payment processing for Paypal and EPS. On the frontend AngularJS, Less and SVG have been used.
-        </p>
-    </div>
-</div>
-<div class="clear"></div>
 {% endblock %}

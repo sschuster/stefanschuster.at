@@ -5,6 +5,10 @@
 @import "fontawesome/fontawesome";
 @import "fontawesome/solid";
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   background: #777;
   color: @cMainText;
@@ -13,10 +17,18 @@ body {
   line-height: 1.23;
 }
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 div#page {
+  position: relative;
   margin: 0 auto;
   max-width: 960px;
+  min-height: 100vh;
+  padding-bottom: 60px;
   background: white;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 
   > .content{
     margin: 10px;
@@ -25,8 +37,18 @@ div#page {
     a {
       color: @cAccentRed;
     }
+
+    h1, h2, h3, h4, h5, p {
+      margin: 10px 0;
+    }
   }
 }
+
+.onDesktop({
+  div#page {
+    min-height: 50vw;
+  }
+});
 
 @import "components/header";
 @import "components/menu";

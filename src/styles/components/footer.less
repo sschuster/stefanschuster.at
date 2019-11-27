@@ -1,16 +1,29 @@
 @import "../mixins/variables";
 
-/*
 footer {
-  margin: 100px 0 20px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 5px;
+  background: @cMainText;
+  color: white;
 
-  div.grid_12 {
-    text-align: center;
-  }
+  ul.footer-menu {
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 0;
+    display: flex;
 
-  a {
-    color: @cHighlight;
-    text-decoration: none;
+    li {
+      a {
+        display: block;
+        color: @cAccentRed;
+        text-decoration: none;
+      }
+    }
   }
 }
-*/

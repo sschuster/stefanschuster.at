@@ -1,8 +1,8 @@
 @import "../mixins/variables";
 @import "../mixins/functions";
 
-.content {
-  .poster {
+div#page > .content {
+  .home {
     h2 {
       color: @cAccentRed;
       margin: 5px 0 0;
@@ -47,7 +47,7 @@
       }
     }
 
-    > section {
+    section.data {
       display: flex;
       align-items: flex-start;
 
@@ -67,6 +67,59 @@
 
       ul.facts {
         padding-left: 30px;
+
+        li {
+          margin-bottom: 10px;
+
+          ul {
+            margin: 5px 0 0;
+
+            li {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    section.details {
+      img {
+        max-width: 50vw;
+      }
+    }
+  }
+
+  .skills {
+    ul ul {
+      margin: 5px 0;
+    }
+  }
+
+  .references {
+    ul {
+      margin: 20px 0 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        clear: both;
+
+        h2 {
+          font-size: 1em;
+        }
+
+        img {
+          float: right;
+          max-width: 50vw;
+          padding: 0 0 10px 10px;
+        }
+
+        &:nth-child(even) {
+          img {
+            float: left;
+            padding: 0 10px 10px 0;
+          }
+        }
       }
     }
   }

@@ -5,11 +5,13 @@ const supportedLocales = new locale.Locales(["en", "de"]);
 
 exports.init = function(app) {
     app.get("/", localeRedirect);
-    app.get(/^\/(en|de)$/, localeMiddleware, (req, res, next) => render(req, res, "index"));
-    app.get(/^\/(en|de)\/about$/, localeMiddleware, (req, res, next) => render(req, res, "about"));
-    app.get(/^\/(en|de)\/services$/, localeMiddleware, (req, res, next) => render(req, res, "services"));
-    app.get(/^\/(en|de)\/competencies$/, localeMiddleware, (req, res, next) => render(req, res, "competencies"));
-    app.get(/^\/(en|de)\/imprint$/, localeMiddleware, (req, res, next) => render(req, res, "imprint"));
+    app.use(localeMiddleware);
+    app.get(/^\/(en|de)$/, (req, res, next) => render(req, res, "index"));
+    app.get(/^\/(en|de)\/skills/, (req, res, next) => render(req, res, "skills"));
+    app.get(/^\/(en|de)\/references$/, (req, res, next) => render(req, res, "references"));
+    app.get(/^\/(en|de)\/about$/, (req, res, next) => render(req, res, "about"));
+    app.get(/^\/(en|de)\/imprint$/, (req, res, next) => render(req, res, "imprint"));
+    app.use((req, res, next) => render(req, res, "notfound"));
 };
 
 function localeRedirect(req, res, next) {
@@ -27,7 +29,8 @@ function localeMiddleware(req, res, next) {
 function render(req, res, template, options) {
     let context = _.extend({
         langActive: req.lang,
-        langPath: req.path.substr(3)
+        langPath: req.path.substr(3),
+        year: new Date().getFullYear()
     }, options);
 
     res.render(`${req.lang}/${template}`, context);
