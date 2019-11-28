@@ -1,155 +1,130 @@
 {% extends "layout.njk" %}
 {% set TITLE = "Über mich" %}
-{% set CONTENTCLASS = "about" %}
-{% set METADESCRIPTION = "Über Stefan Schuster. Ich bin ein freiberuflicher Programmierer aus Wien. Meine Kompetenzen sind HTML5, CSS, JavaScript und mobile Apps." %}
 
 {% block content %}
-<div class="grid_12">
+<div class="about">
     <h1>Über mich</h1>
-</div>
-
-<div class="grid_12">
     <h2>Profil</h2>
-</div>
-<div class="grid_3 resume_left">
-    <img class="portrait" align="left" src="/img/portrait.png" width="100" height="100">
-    <b>Name:</b><br>
-    <b>Titel:</b><br>
-    <b>Geboren:</b><br>
-    <b>Nationalität:</b><br>
-    <b>Wohnort:</b><br>
-    <b>Ausbildung:</b>
-</div>
-<div class="grid_9 resume_right">
-    Stefan Schuster<br>
-    DI(FH)<br>
-    1984<br>
-    Österreich<br>
-    Wien<br>
-    FH Campus Wien, Informationstechnologie und Telekommunikation
-</div>
+    <section class="personal">
+        <img src="/img/portrait.jpg">
+        <table>
+            <tr>
+                <td><strong>Name:</strong></td>
+                <td>Stefan Schuster</td>
+            </tr>
+            <tr>
+                <td><strong>Titel:</strong></td>
+                <td>DI(FH)</td>
+            </tr>
+            <tr>
+                <td><strong>Geboren:</strong></td>
+                <td>1984</td>
+            </tr>
+            <tr>
+                <td><strong>Nationalität:</strong></td>
+                <td>Österreich</td>
+            </tr>
+            <tr>
+                <td><strong>Wohnort:</strong></td>
+                <td>Wien</td>
+            </tr>
+            <tr>
+                <td><strong>Ausbildung:</strong></td>
+                <td>FH Campus Wien, Informationstechnologie und Telekommunikation</td>
+            </tr>
+        </table>
+    </section>
 
-<div class="grid_12">
-    <h2>Lebenslauf</h2>
-</div>
-<div class="grid_3 resume_left">
-    <b>Selbstständig</b><br>
-    seit 06/2014
-</div>
-<div class="grid_9 resume_right">
-    <b>Freiberuflicher Programmierer</b><br>
-    Dienstleistungen in den Bereichen HTML5, CSS, JavaScript, Node.js und mobilen Apps
-</div>
-<div class="clear"></div>
-<div class="grid_3 resume_left">
-    <b>IRIAN Solutions Softwareentwicklungs- und Beratungsgesellschaft mbH</b><br>
-    01/2007 - 04/2014
-</div>
-<div class="grid_9 resume_right">
-    <b>Software-Entwickler, Consultant</b><br>
-    Interne Entwicklung nativer und web-basierter mobiler Anwendungen. Programmierung reichhaltiger Webanwendungen für interne Projekte und externe Kunden. Consutling bei Kunden im Bereich HTML, CSS und JavaScript.
-</div>
-<div class="clear"></div>
-<div class="grid_3 resume_left">
-    <b>IMAC IT Forschungs- und Entwicklungs GmbH / Center Communication Systems GmbH</b><br>
-    08/2004 - 12/2006
-</div>
-<div class="grid_9 resume_right">
-    <b>Software-Entwickler</b><br>
-    Entwicklung plattformübergreifender Desktop-Anwendungen (Linux, Windows) mit C++ und QT / wxWidgets im Bereich der Verkehrsüberwachung.
-</div>
+    <section>
+        <h2>Lebenslauf</h2>
+        <table>
+            <tr>
+                <td>
+                    <strong>Selbstständig</strong><br>
+                    seit 06/2014
+                </td>
+                <td>
+                    <strong>Freiberuflicher Programmierer - Freelancer</strong><br>
+                    Dienstleistungen in den Bereichen HTML5, CSS, JavaScript, Node.js und mobilen Apps
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>IRIAN Solutions Softwareentwicklungs- und Beratungsgesellschaft mbH</strong><br>
+                    01/2007 - 04/2014
+                </td>
+                <td>
+                    <strong>Software-Entwickler, Consultant</strong><br>
+                    Interne Entwicklung nativer und web-basierter mobiler Anwendungen. Programmierung reichhaltiger Webanwendungen für interne Projekte und externe Kunden. Consutling bei Kunden im Bereich HTML, CSS und JavaScript.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>IMAC IT Forschungs- und Entwicklungs GmbH / Center Communication Systems GmbH</strong><br>
+                    08/2004 - 12/2006
+                </td>
+                <td>
+                    <strong>Software-Entwickler</strong><br>
+                    Entwicklung plattformübergreifender Desktop-Anwendungen (Linux, Windows) mit C++ und QT / wxWidgets im Bereich der Verkehrsüberwachung.
+                </td>
+            </tr>
+        </table>
+    </section>
 
-<div class="grid_12">
-    <h2>Öffentlich</h2>
-    <p>
-        Im Laufe der letzten Jahre habe ich einige Vorträge auf Technologie-Konferenzen gehalten und bei der Erstellung eines Buches mitgeholfen. Hier ein Auswahl meiner öffentlichen Arbeit.
-    </p>
+    <section>
+        <h2>Öffentlich</h2>
+        <p>
+            Im Laufe der Jahre, vor allem während meiner Zeit bei der IRIAN, habe ich einige Vorträge auf Technologie-Konferenzen gehalten und bei der Erstellung eines Buches mitgeholfen. Hier ein Auswahl meiner öffentlichen Arbeit.
+        </p>
+        <p>
+            <strong>CONFESS_2015</strong><br>
+            Vortrag: Mobile Application Development: Native vs. Cordova vs. WebApp<br>
+            <a href="/download/2015_confess_slides.pdf" target="_blank">Folien</a><br>
+            <a href="/download/2015_confess_mobile_apps.m4v" target="_blank">Video</a>
+        </p>
+        <p>
+            <strong>JavaLand 2014</strong><br>
+            Vortrag: Ein Blick über den Tellerrand: Was steckt hinter Node.js<br>
+            <a href="/download/2014_javaland_slides.pdf" target="_blank">Folien</a>
+        </p>
+        <p>
+            <strong>CONFESS_2013</strong><br>
+            Vortrag: HTML-, CSS- and JavaScript techniques for mobile web applications<br>
+            <a href="/download/2013_confess_slides.pdf" target="_blank">Folien</a><br>
+            <a href="/download/2013_confess_mobile_web.m4v" target="_blank">Video</a>
+        </p>
+        <p>
+            <strong>CONFESS_2012</strong><br>
+            Vortrag: Cross platform mobile application development: Lessons learned<br>
+            <a href="/download/2012_confess_slides.pdf" target="_blank">Folien</a><br>
+            <a href="/download/2012_confess_cross_mobile.m4v" target="_blank">Video</a>
+        </p>
+        <p>
+            <strong>JSFDays/eJug days 2009</strong><br>
+            Vortrag: A JavaScript Outlook: How the client gets more powerful<br>
+            <a href="/download/2009_jsfdays_slides.pdf" target="_blank">Folien</a>
+        </p>
+        <p>
+            <strong>JSFDays/eJug days 2008</strong><br>
+            Advanced JavaScript in FAT Clients<br>
+            <a href="/download/2008_jsfdays_slides.pdf" target="_blank">Folien</a>
+        </p>
+        <p>
+            <strong>AjaxInAction 2007</strong><br>
+            Offline-Webanwendungen mit Google Gears<br>
+            <a href="/download/2007_ajaxinaction_slides.pdf" target="_blank">Folien</a>
+        </p>
+        <p>
+            <strong>Webinale 2007</strong><br>
+            Going Crazy mit JavaScript: Grafik im Browser<br>
+            <a href="/download/2007_webinale_slides.pdf" target="_blank">Folien</a>
+        </p>
+        <p>
+            <strong>Buch: Ruby on Rails</strong><br>
+            Co-Autor eines Buches über Ruby on Rails 1.0<br>
+            <a href="http://www.amazon.de/Ruby-Rails-Webentwicklung--Grundlagen-fortgeschrittene/dp/3898644022" target="_blank">Info @ Amazon</a><br><br>
+            <img src="/img/book_rails.png">
+        </p>
+    </section>
 </div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    04/2015
-</div>
-<div class="grid_9 resume_right">
-    <b>CONFESS_2015</b><br>
-    Mobile Application Development: Native vs. Cordova vs. WebApp<br>
-    <a href="/download/2015_confess_slides.pdf" target="_blank">Folien</a><br>
-    <a href="http://2015.con-fess.com/ZW98zvVz/ConFESS_2015_Day2_1400_R1_Stefan_Schuster_mobile_apps.mp4" target="_blank">Video</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    03/2014
-</div>
-<div class="grid_9 resume_right">
-    <b>JavaLand 2014</b><br>
-    Ein Blick über den Tellerrand: Was steckt hinter Node.js<br>
-    <a href="/download/2014_javaland_slides.pdf" target="_blank">Folien</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    04/2013
-</div>
-<div class="grid_9 resume_right">
-    <b>CONFESS_2013</b><br>
-    HTML-, CSS- and JavaScript techniques for mobile web applications<br>
-    <a href="/download/2013_confess_slides.pdf" target="_blank">Folien</a><br>
-    <a href="http://download.irian.at/2013/Bf1uWogDs7/20130404_confess_2013_R1_1400_Stefan_Schuster_mobileweb.mp4" target="_blank">Video</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    05/2012
-</div>
-<div class="grid_9 resume_right">
-    <b>CONFESS_2012</b><br>
-    Cross platform mobile application development: Lessons learned<br>
-    <a href="/download/2012_confess_slides.pdf" target="_blank">Folien</a><br>
-    <a href="http://download.irian.at/2012/ugk426YaR5/d2_m_1245_Dejmek_Hinterndorfer_Schuster_CrossMobile.mp4" target="_blank">Video</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    04/2009
-</div>
-<div class="grid_9 resume_right">
-    <b>JSFDays/eJug days 2009</b><br>
-    A JavaScript Outlook: How the client gets more powerful<br>
-    <a href="/download/2009_jsfdays_slides.pdf" target="_blank">Folien</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    03/2008
-</div>
-<div class="grid_9 resume_right">
-    <b>JSFDays/eJug days 2008</b><br>
-    Advanced JavaScript in FAT Clients<br>
-    <a href="/download/2008_jsfdays_slides.pdf" target="_blank">Folien</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    11/2007
-</div>
-<div class="grid_9 resume_right">
-    <b>AjaxInAction 2007</b><br>
-    Offline-Webanwendungen mit Google Gears<br>
-    <a href="/download/2007_ajaxinaction_slides.pdf" target="_blank">Folien</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Vortrag</b><br>
-    05/2007
-</div>
-<div class="grid_9 resume_right">
-    <b>Webinale 2007</b><br>
-    Going Crazy mit JavaScript: Grafik im Browser<br>
-    <a href="/download/2007_webinale_slides.pdf" target="_blank">Folien</a>
-</div>
-<div class="grid_3 resume_left">
-    <b>Veröffentlichung</b><br>
-    06/2006
-</div>
-<div class="grid_9 resume_right">
-    <b>Ruby on Rails</b><br>
-    Co-Autor eines Buches über Ruby on Rails 1.0<br>
-    <a href="http://www.amazon.de/Ruby-Rails-Webentwicklung--Grundlagen-fortgeschrittene/dp/3898644022" target="_blank">Info @ Amazon</a><br><br>
-    <img src="/img/book_rails.png">
-</div>
-
-<div class="clear"></div>
 {% endblock %}

@@ -1,0 +1,99 @@
+{% extends "layout.njk" %}
+{% set TITLE = "References" %}
+
+{% block content %}
+<div class="references">
+    <h1>Referenzen</h1>
+    <p>
+        Ein Auszug an Projekten und Kunden für die ich gearbeitet habe:
+    </p>
+    <ul>
+        <li>
+            <h2>Mind42:</h2>
+            <p>
+                <a href="/img/ref_mind42_large.jpg" target="_blank">
+                    <img src="/img/ref_mind42_small.jpg">
+                </a>
+                Mind42 ist eine freie Mind-Mapping Anwendung in der Cloud. So wie Google Docs & Spreadheets und andere SaaS
+                (Software as a Service) Lösungen, erlaubt auch Mind42 die Erstellung von Dokumenten - in diesem Fall Mindmaps
+                - im Webbrowser und die kollaborative Zusammenarbeit mit anderen Nutzern. Der Service ist schon etwas betagt
+                und wartet nur auf eine neue Version, aber ich kümmere mich weiterhin um Betrieb, Wartung und Weiterentwicklung
+                der Platform. Das umfasst alle Bereiche vom Server-Betrieb, der Backend-Entwicklung (node.js) und der
+                Frontend-Entwicklung (Dojo).
+                <br>
+                <a href="https://mind42.com" target="_blank">https://mind42.com</a>
+            </p>
+        </li>
+        <li>
+            <h2>Castl:</h2>
+            <img src="/img/ref_castl.png">
+            Castl ist eine neue Social-Media App für iOS und Android. Ich bin Leiter der Frontend-Entwicklung und
+            Hauptentwickler der nativen iOS Bestandteile und der Cordova Webviews. Der native iOS Teil ist in Swift geschrieben,
+            die Webviews nutzen Angular. Die einzigartige Kombination von nativen und Web-Bestandteilen ermöglichte die
+            recht kosteneffiziente Umsetzung der Android Version. Im Backend kommt PHP/Laravel zum Einsatz und es werden
+            JSON REST APIs genutzt.
+            <br>
+            <a href="https://castl.rocks" target="_blank">https://castl.rocks</a>
+        </li>
+        <li>
+            <h2>oneStep2:</h2>
+            <img src="/img/ref_onestep2.png">
+            Die oneStep2 GmbH ist ein österreichischer IT-Service-Provider, spezialisiert auf Server-Monitoring und
+            (Netzwerk-) Infrastruktur, geleitet von einem langjährigem Kollegen von mir. Gemeinsam mit oneStep2 sind bereits
+            mehrere Webseiten (großteils basierend auf Drupal) und Apps (nativ für iOS und Android, als auch Cordova) umgesetzt
+            worden. Das jüngste Porjekt war ein komplett maßgeschneiderter, hochverfügbarer und abgesicherter Online-Web-Shop
+            für den medizinischen Bereich. Für das Projekte habe ich ein Node.js Backend (HAPI) und Angular Frontend beigesteuert.
+        </li>
+        <li>
+            <h2>localstorage:</h2>
+            <img src="/img/ref_localstorage.png">
+            localstorage ist ein Wiener Immobilien-Unternehmen welches Laggerräume online über Ihre Homepage vermietet.
+            Ich wurde beauftragt die Homepage komplett neu auf Basis von PHP zu implementieren. Das Endprodukt basiert
+            auf dem Laravel PHP Framework und inkludiert Bezahlschnittstellen für Paypal und EPS. Im Frontend-Bereich
+            kamen AngularJS, Less und SVG zum Einsatz.
+        </li>
+        <li>
+            <h2>Sample+:</h2>
+            <img src="/img/ref_sampleplus.png">
+            Sample+ ist ein Wiener Startup im Bereich der Marktforschung, welches interessierten Konsumenten gratis Produktproben
+            im Austausch für deren Bewertung und Meinung verteilt. Ich wurde mit der Umsetzung der Homepage und der Programmierung
+            eines maßgeschneiderten Umfrage-Systems beauftragt. Das Projekt basiert auf Laravel.
+        </li>
+        <li>
+            <h2>ProLion:</h2>
+            <a href="/img/ref_prolion_large.jpg" target="_blank">
+                <img src="/img/ref_prolion_small.jpg">
+            </a>
+            ProLion ist eine österreichische Firma für Dienstleistungen im Storage-Bereich. Ich habe mitgeholfen die neue
+            Version des Hauptproduktes umzusetzen bei der modernere Technologie wie MQTT deutliche Vorteile gegenüber der
+            alten Version ermöglichten (z.B. weniger Datenverbrauch und erhöhte Ausfallsicherheit, ...). Das Backend wurde
+            mit Typescript, HAPI und Node.js umgesetzt, und konnte sich Code mit dem in Angular geschriebenen Frontend teilen.
+        </li>
+        <li>
+            <h2>Jollydays:</h2>
+            <img src="/img/ref_jollydays.png">
+            Jollydays ist eine österreichische Firma welche Gutscheine für Erlebnisgeschenke verkauft. Bei einem Projekt
+            habe ich wiederholt mitgearbeitet. Einerseits um die Webseite für mobile Endgeräte vorzubereiten (das umfasste
+            die Restrukturierung der LESS-Sourcen, den Aufbau einer Komponentenbibliothek und die responsive Umsetzung der
+            Komponenten) als auch die spätere Mitarbeit an der AngularJS basierte Anwendung selbst.
+        </li>
+        <li>
+            <h2>all about apps:</h2>
+            <img src="/img/ref_allaboutapps.png">
+            all about apps ist ein österreichischer Anbieter von Lösungen im Mobilen Bereich, die alles vom Consulting,
+            über die Entwicklung bis zum finalen Publishing von Apps abdecken. Für all about apps war ich in mehreren
+            Projekten an der Erstellung node.js basierter Backends beteiligt, die JSON basierte REST-Schnittstellen für
+            Apps bereit stellten (inklusive Daten-Persistierung und Authentifizierung).
+        </li>
+        <li>
+            <h2>Irian:</h2>
+            <img src="/img/ref_irian.png">
+            IRIAN Solutions GmbH ist eine Wiener Consulting-Firma mit Fokus auf Enterprise Java und Open Source, und es
+            war mit eine Freude meinen alten Arbeitgeber auch nach dem Beginn der Selbsständigkeit zu meinen Kunden zählen
+            zu dürfen. Meine Arbeit für die IRIAN beinhaltete Consulting- und Entwicklungs-Tätigkeiten für Kunden wie die
+            Credite Suisse und die Bundesrechenzentrum GmbH, als auch für interne Projekte. Mein Hauptbetätigungsfeld dabei
+            war alles rund um HTML, CSS und JavaScript.
+        </li>
+    </ul>
+</div>
+{% endblock %}

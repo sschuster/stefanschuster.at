@@ -1,129 +1,147 @@
 {% extends "layout.njk" %}
-{% set CONTENTCLASS = "index" %}
-{% set METADESCRIPTION = "Mein Name ist Stefan Schuster, und ich bin ein freiberuflicher Programmierer aus Wien mit den Spezialgebieten HTML5, CSS, JavaScript und mobile Applikationen" %}
 
 {% block content %}
-<div class="grid_4 img">
-    <img src="/img/consulting_html5.png" alt="HTML5, CSS3 und JavaScript consulting" title="HTML5, CSS3 und JavaScript consulting">
-</div>
-<div class="grid_4 img">
-    <img src="/img/consulting_nodejs.png" alt="Node.js consulting" title="Node.js consulting">
-</div>
-<div class="grid_4 img">
-    <img src="/img/consulting_mobile.png" alt="iOS und Android mobile app consulting" title="iOS und Android mobile app consulting">
-</div>
-<div class="grid_12 intro">
-    <p>
-        Hallo, ich heiße Stefan Schuster und bin freiberuflicher Programmierer aus Wien.
-    </p>
-    <p>
-        Meine Spezialgebiete sind die Web-Technologien <strong>HTML5</strong>, <strong>CSS</strong> und <strong>JavaScript</strong>, sowie <strong>mobile Applikationen</strong>.
-    </p>
-    <p>
-        Ich biete Dienstleistungen und Consulting im Bereich der <strong>Web-Entwicklung</strong> und der Erstellung von <strong>Apps</strong> an.
-    </p>
-    <p>
-        <a class="button" href="/{{ langActive }}/services">Dienstleistungen</a>
-    </p>
-</div>
-<div class="grid_3 portrait">
-    <img src="/img/portrait.png" alt="Stefan Schuster" title="Stefan Schuster">
-</div>
-<div class="grid_5">
-    <h2>Über mich</h2>
-    <p>
-        Ich bin ein freiberuflicher Programmierer und lebe in Wien. Ich habe über sieben Jahre Berufserfahrung im Bereich Software-Entwicklung und Consulting. In den letzten Jahren hatte ich die Möglichkeit an vielen Projekten mitzuarbeiten bzw. Projekte zu leiten, und dadurch mit vielen verschiedenen Technologien Erfahrungen zu sammeln.
-    </p>
-</div>
-<div class="grid_4">
-    <h2>Kontakt</h2>
-    <ul>
-        <li><a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a></li>
-        <li><a href="http://at.linkedin.com/in/schusterstefan" target="_blank">LinkedIn</a></li>
-        <li><a href="https://www.xing.com/profile/Stefan_Schuster10" target="_blank">XING</a></li>
-        <li><a href="https://github.com/sschuster" target="_blank">GitHub</a></li>
-    </ul>
-</div>
-<div class="grid_9 prefix_3">
-    <p>
-        <a class="button" href="/{{ langActive }}/competencies">Kompetenzen</a>
-        <a class="button" href="/{{ langActive }}/about">Über mich</a>
-    </p>
-</div>
-<div class="grid_12 references">
-    <h2>Referenzen</h2>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://mind42.com" target="_blank" class="mind42">
-            <img src="/img/ref_mind42.png" alt="Mind42.com - Free online mind mapping software" title="Mind42.com - Free online mind mapping software">
-        </a>
-    </div>
-    <div class="grid_9">
+<div class="home">
+    <h2>Stefan Schuster</h2>
+    <h3>Full-stack JavaScript Entwickler, <span class="cyan">Mobile Enwtickler</span>, ...</h3>
+    <section class="data">
+        <img src="/img/portrait.jpg">
+        <ul class="facts">
+            <li>
+                <strong>Kernkompetenzen:</strong> Web und Mobile Software-Entwicklung
+            </li>
+            <li>
+                <strong>Leistungen:</strong> Web-Projekte jeder Komplexität (von einfachen Webseiten bis zu komplexen Single Page Applications), Web-Hosting, App-Entwicklung
+            </li>
+            <li>
+                <strong>Ort:</strong> Wien, Österreich
+            </li>
+            <li>
+                <strong>Weitere Informationen:</strong>
+                <ul>
+                    <li>
+                        <a href="/de/skills">Fertigkeiten</a>
+                    </li>
+                    <li>
+                        <a href="/de/references">Referenzen</a>
+                    </li>
+                    <li>
+                        <a href="/de/about">Über</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <strong>Kontakt:</strong><br>
+                <a href="mailto:contact@stefanschuster.at">contact@stefanschuster.at</a>
+            </li>
+        </ul>
+    </section>
+    <section class="availability">
+        <h4>
+            Verfügbarkeit
+        </h4>
+        <div class="widget">
+            <div class="bright" id="flm-profile-widget"><a target="_blank" href="https://www.freelancermap.at/freelancer-verzeichnis/profile/entwicklung/216085-profil-stefan-schuster-software-entwickler-aus-wien.html?ref=widget">Profil bei freelancermap</a></div>
+            <script src="//www.freelancermap.at/js/widgets/profile.js"></script>
+            <script>flm_profile.init({profile_id: 216085, showName: false, showImage:false})</script>
+        </div>
+    </section>
+    <section class="details">
+        <h4>
+            Über mich
+        </h4>
         <p>
-            Mind42 ist eine freie Mind-Mapping Anwendung in der Cloud. So wie Google Docs &amp; Spreadheets und andere SaaS (Software as a Service) Lösungen, erlaubt auch Mind42 die Erstellung von Dokumenten - in diesem Fall Mindmaps - im Webbrowser und die kollaborative Zusammenarbeit mit anderen Nutzern. Ich kümmere mich um den fortlaufenden Betrieb, Wartung und die Weiterentwicklung der Platform. Das umfasst alle Bereiche vom Server-Betrieb, der Backend-Entwicklung (node.js) und der Frontend-Entwicklung (Dojo):
+            Ich bin <strong>Freelancer</strong> im Bereich <strong>Software-Entwicklung</strong> aus <strong>Wien</strong> mit mehr als 15 Jahren Berufserfahrung in der IT.
+            Die für mich treffendste Jobbeschreibung ist wohl <strong>Fullstack JavaScript Entwickler</strong> weil JavaScript meine Passion ist,
+            alles in allem bin ich aber ein Allrounder mit Fokus auf <strong>mobile und Web-Entwicklung</strong>.
         </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://irian.at" target="_blank" class="irian">
-            <img src="/img/ref_irian.png" alt="IRIAN Solutions - The software experts" title="IRIAN Solutions - The software experts">
-        </a>
-    </div>
-    <div class="grid_9">
         <p>
-            IRIAN Solutions GmbH ist eine Wiener Consulting-Firma mit Fokus auf Enterprise Java und Open Source und ich freue mich, meinen alten Arbeitgeber auch heute noch zu meinen Kunden zählen zu dürfen. Meine Arbeit für die IRIAN beinhaltet Consulting- und Entwicklungs-Tätigkeiten für Kunden wie die Credite Suisse und die Bundesrechenzentrum GmbH, als auch für interne Projekte. Mein Hauptbetätigungsfeld dabei ist alles rund um HTML, CSS und JavaScript.
+            <img src="/img/consulting_html5.png" align="right">
+            Ich bin Experte in allem was mit JavaScript zu tun hat. Von Vanilla JS für einfache dynamische Funktionen auf
+            Homepages, über jQuery, bis hin zu komplexen <strong>Single Page Applications</strong> mit <strong>Angular</strong>
+            (oder React oder Vue.js) oder auch Backend-Entwicklung mit <strong>Node.js</strong> (mit Express, HAPI usw.).
+            Das beinhaltet natürlich auch alle zugehörigen Technologien wie <strong>Typescript</strong>, Front-End Technologien
+            (HTML, CSS), Datenbanken (MySQL, Postgres, Redis, als auch NoSQL Datenbanken wie Couchbase und CouchDB, ...),
+            APIs (z.B. REST mit verschiedenen Datenformaten wie JSON, XML, ...) und diversen anderen Technologien (z.B.
+            Queues wie RabbitMQ oder MQTT). Da ich auch selbst einen Web-Service betreibe bin ich auch mit dem Deployment
+            und dem Umgang mit solchen Services unter Linux vertraut. Das beinhaltet AWS Services, das
+            Schreiben von Dockerfiles das einrichten automatisierter Builds in einer Gitlab Instanz und so weiter.
         </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://www.jollydays.at" target="_blank" class="jollydays">
-            <img src="/img/ref_jollydays.png" alt="Jollydays - Geschenke und Geschenkideen" title="Jollydays - Geschenke und Geschenkideen">
-        </a>
-    </div>
-    <div class="grid_9">
         <p>
-            Jollydays ist eine österreichische Firma welche Gutscheine für Erlebnisgeschenke verkauft. Für Ihr neues Projekt - makeyourday.com - habe ich geholfen die Webseite für mobile Endgeräte vorzubereiten. Das umfasste die Restrukturierung der LESS-Sourcen, den Aufbau einer Komponentenbibliothek und die responsive Umsetzung der Komponenten. Neben der Vorbereitung des neuen Stylings habe ich auch geholfen die neuen Komponenten in die AngularJS basierte Anwendung zu integrieren.
+            Als <strong>Allrounder</strong> ist das aber nicht alles mit dem ich Erfahrung gesammelt habe. Für die
+            <strong>App Entwicklung</strong> bin ich auch als Swift Programmierer aktiv, ich betreue mehrere PHP basierte
+            Webseiten und ganz allgemein gesprochen komme ich mit der vorhandenen Erfahrung in so vielen Bereichen auch
+            sehr schnell mit neuen Frameworks, Programmiersprachen und Werkzeugen zurecht. Für einen kompletten Überlick
+            über die Technologien mit denen ich arbeite werfen Sie bitte einen Blick auf die Seite <a href="/de/skills">Fertigkeiten</a>.
         </p>
-    </div>
+    </section>
+    <script>
+        (function() {
+            const span = document.querySelector(".home h3 span");
+            const colors = ["cyan", "purple", "orange", "red", "dark-red", "teal", "blue", "burgundy", "snow", "green"];
+            const titles = [
+                "Typescript Entwickler",
+                "Angular Entwickler",
+                "Vue.js Entwickler",
+                "Node.js Entwickler",
+                "Redux Entwickler",
+                "async Entwickler",
+                "Template Entwickler",
+                "Express/HAPI Entwickler",
+                "REST Entwickler",
+                "API Entwickler",
+                "Mobile Entwickler",
+                "Cordova Entwickler",
+                "PHP Entwickler",
+                "Laravel Entwickler",
+                "iOS Entwickler",
+                "Objective-C Entwickler",
+                "Swift Entwickler",
+                "Web Entwickler",
+                "Docker Entwickler",
+                "Frontend Entwickler",
+                "Backend Entwickler",
+                "MySQL Entwickler",
+                "Postgres Entwickler",
+                "Datenbank Entwickler"
+            ];
+            const changeTitle = function() {
+                let newColor = null;
+                while (!newColor) {
+                    newColor = colors[Math.min(colors.length - 1, Math.floor(Math.random() * colors.length))];
+                    if (newColor === span.className) {
+                        newColor = null;
+                    }
+                }
+                let newText = null;
+                while (!newText) {
+                    newText = titles[Math.min(titles.length - 1, Math.floor(Math.random() * titles.length))];
+                    if (newText === span.innerText) {
+                        newText = null;
+                    }
+                }
+                let promise = Promise.resolve();
+                for (let i = span.innerText.length - 1; i >= 0; i--) {
+                    promise = promise.then(() => {
+                        span.innerText = span.innerText.substr(0, span.innerText.length - 1);
+                        return new Promise((resolve) => { setTimeout(resolve, 30); });
+                    });
+                }
+                promise = promise.then(() => {
+                    span.className = newColor;
+                });
+                for (let i = 0; i < newText.length; i++) {
+                    promise = promise.then(() => {
+                        span.innerText = newText.substr(0, span.innerText.length + 1);
+                        return new Promise((resolve) => { setTimeout(resolve, 30); });
+                    });
+                }
+                promise.then(() => {
+                    setTimeout(changeTitle, 3000);
+                });
+            };
+            setTimeout(changeTitle, 3000);
+        })();
+    </script>
 </div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://www.onestep2.at" target="_blank" class="onestep2">
-            <img src="/img/ref_onestep2.png" alt="oneStep2 - IT-Beratung und Dienstleistungen" title="oneStep2 - IT-Beratung und Dienstleistungen">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            Die oneStep2 GmbH ist ein österreichischer IT-Service-Provider, spezialisiert auf Server-Monitoring und (Netzwerk-) Infrastruktur, geleitet von einem langjährigem Kollegen von mir. Zusammen mit der oneStep2 GmbH habe ich bereits erfolgreich mehrere Homepage-Projekte (hauptsächlich mit Drupal, wie etwa die Seite motorradreporter.com) und Apps (nativ für Android und iOS, als auch Cordova basierte Web-Apps) umgesetzt.
-        </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="https://www.allaboutapps.at" target="_blank" class="allaboutapps">
-            <img src="/img/ref_allaboutapps.png" alt="all about apps - Mobile Solutions für Ihr Unternehmen" title="all about apps - Mobile Solutions für Ihr Unternehmen">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            all about apps ist ein österreichischer Anbieter von Lösungen im Mobilen Bereich, die alles vom Consulting, über die Entwicklung bis zum finalen Publishing von Apps abdecken. Für all about apps war ich in mehreren Projekten an der Erstellung node.js basierter Backends beteiligt, die JSON basierte REST-Schnittstellen für Apps bereit stellten (inklusive Daten-Persistierung und Authentifizierung).
-        </p>
-    </div>
-</div>
-<div class="container_12 reference">
-    <div class="grid_3 logo">
-        <a href="http://www.localstorage.at" target="_blank" class="localstorage">
-            <img src="/img/ref_localstorage.png" alt="Local-Storage Wien: Der günstige Lagerraum gleich in Ihrer Nähe">
-        </a>
-    </div>
-    <div class="grid_9">
-        <p>
-            localstorage ist ein Wiener Immobilien-Unternehmen welches Laggerräume online über Ihre Homepage vermietet. Ich wurde beauftragt die Homepage komplett neu auf Basis von PHP zu implementieren. Das Endprodukt basiert auf dem Laravel PHP Framework und inkludiert Bezahlschnittstellen für Paypal und EPS. Im Frontend-Bereich kamen AngularJS, Less und SVG zum Einsatz.
-        </p>
-    </div>
-</div>
-<div class="clear"></div>
 {% endblock %}
