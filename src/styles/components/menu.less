@@ -96,5 +96,36 @@ nav {
 }
 
 .onDesktop({
-  //a
+  nav {
+    > i {
+      display: none !important;
+    }
+
+    div.menu {
+      display: block;
+      position: relative;
+
+      > i {
+        display: none !important;
+      }
+
+      ul {
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+
+        li {
+          border: 0 !important;
+
+          a {
+            padding: 0 10px;
+
+            &.active {
+              color: @cAccentRed;
+            }
+          }
+        }
+      }
+    }
+  }
 });

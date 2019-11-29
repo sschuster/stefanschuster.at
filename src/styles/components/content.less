@@ -130,15 +130,19 @@ div#page > .content {
       list-style: none;
 
       li {
-        clear: both;
+        .clear {
+          border: 1px solid transparent;
+        }
 
         h2 {
           font-size: 1em;
+          margin-top: 20px;
         }
 
         img {
           float: right;
           max-width: 50vw;
+          max-height: 300px;
           padding: 0 0 10px 10px;
         }
 
@@ -175,5 +179,22 @@ div#page > .content {
         flex: auto;
       }
     }
+
+    .onDesktop({
+      section.resume {
+        table {
+          tr {
+            td {
+              padding-bottom: 20px;
+
+              &:first-child {
+                text-align: right;
+                padding-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    });
   }
 }

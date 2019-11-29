@@ -9,12 +9,12 @@
                 </a>
             </li>
             <li>
-                <a href="/{{ langActive }}/skills" class="{% if langPath == '/services' %}active{% endif %}">
-                    Fertigkeiten
+                <a href="/{{ langActive }}/skills" class="{% if langPath == '/skills' %}active{% endif %}">
+                    {% if langActive == 'en' %}Skills{% else %}Fertigkeiten{% endif %}
                 </a>
             </li>
             <li>
-                <a href="/{{ langActive }}/references" class="{% if langPath == '/competencies' %}active{% endif %}">
+                <a href="/{{ langActive }}/references" class="{% if langPath == '/references' %}active{% endif %}">
                     {% if langActive == 'en' %}References{% else %}Referenzen{% endif %}
                 </a>
             </li>
